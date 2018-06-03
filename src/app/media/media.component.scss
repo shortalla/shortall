@@ -1,0 +1,47 @@
+@import '~sass/styles.scss';
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+.photos {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px;
+
+    .photo-container {
+        margin: 4px;
+        overflow: hidden;
+    }
+
+    .photo {
+        width: 20rem;
+        height: 15rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: transform $transition-time linear;
+        filter: grayscale(0.8);
+
+        &:hover {
+            transform: scale(1.1);
+            .gradient {
+                opacity: 0;
+            }
+        }
+    }
+
+    .gradient {
+        transition: opacity $transition-time linear;
+        width: 20rem;
+        height: 15rem;
+        background-image: linear-gradient(rgba(34, 180, 156, 0.3), rgba(64, 66, 64, 0.1));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+}

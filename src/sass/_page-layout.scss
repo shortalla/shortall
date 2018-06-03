@@ -1,0 +1,35 @@
+// Layout break points
+
+$layout-breakpoint-xs:     600px !default;
+$layout-breakpoint-sm:     960px !default;
+$layout-breakpoint-md:     1280px !default;
+$layout-breakpoint-lg:     1920px !default;
+
+$page-max-width:		   1368px !default;
+$text-max-width:		   $layout-breakpoint-sm;
+
+
+// Page max width
+.gs-max-width {
+	max-width: $page-max-width !important;
+	margin: 0 auto;
+}
+
+@media (max-width: $page-max-width - 1) {
+	.gs-max-width {
+		overflow: hidden;
+	}
+}
+
+
+// Text max width
+.gs-text-max-width {
+	max-width: $text-max-width;
+}
+
+
+// Images
+.image-container > img {
+	max-width: 100%;
+	max-height: 100%;
+}
