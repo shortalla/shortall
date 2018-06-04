@@ -1,0 +1,18 @@
+<div
+	*ngIf="item"
+	class="wrapper"
+	fxLayout="row">
+	<div class="icon">
+		<img src="{{ item.imageUrl }}" />
+	</div>
+	<div
+		class="text"
+		fxLayout="column">
+		<h5 *ngIf="item.heading">
+			{{ item.heading }}
+		</h5>
+		<p>
+			{{ item.text }}
+		</p>
+	</div>
+</div>

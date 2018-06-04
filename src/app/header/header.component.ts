@@ -7,16 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HeaderComponent implements OnInit {
-	private profile: Object
 
 	constructor() {}
 
-	ngOnInit() {
-		this.profile = {
-			firstName: 'Andrew',
-			lastName: 'Shortall',
-			jobTitle: 'Frontend Developer'
-		}
-	}
+	ngOnInit() {}
 
 }

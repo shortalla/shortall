@@ -3,50 +3,5 @@
 header {
     padding: 0.5rem;
     border-bottom: 1px solid $theme-accent-dark;
-}
-
-nav {
-    color: $theme-primary-dark;
-    font-size: $font-size-lg;
-
-    ul {
-        margin: 0;
-        padding: 0;
-    }
-
-    li {
-        padding: 0;
-        list-style: none;
-    }
-
-    a {
-        cursor: pointer;
-        display: block;
-        padding: 8px 2px;
-        margin: 0 10px;
-        color: inherit;
-        text-decoration: none;
-        outline: none;
-        border-bottom: 2px solid transparent;
-
-        &:hover {
-            color: $theme-primary;
-            border-bottom: 2px solid $theme-primary;
-        }
-    }
-}
-
-.title {
-    text-align: center;
-    padding: 0 1rem;
-    font-size: $large-font-size-xs;
-
-    .first-name {
-        color: $theme-accent-light;
-        font-weight: $font-weight-lightest;
-    }
-
-    .last-name {
-        color: $theme-accent-dark;
-    }
+    margin-bottom: 1px;
 }

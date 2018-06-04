@@ -1,0 +1,75 @@
+<as-profile-template>
+
+    <as-profile-photo>
+        <img
+            alt="Photo"
+            src="https://scontent-frx5-1.cdninstagram.com/vp/d450901ee1219d435013104c715b0a4f/5BA6CB01/t51.2885-19/s150x150/27879933_173486346762767_1643623188917125120_n.jpg" />
+    </as-profile-photo>
+
+    <as-profile-title>
+        <span class="first-name">{{profile.firstName}}</span>
+        <span class="last-name">{{profile.lastName}}</span>
+    </as-profile-title>
+
+    <as-profile-details>
+        <div class="detail-items" fxLayout="row" fxLayout="space-between center">
+            <div fxLayout="column">
+                <div class="work-title detail-item">
+                    <div fxLayout="row" fxLayoutAlign="start center">
+                        <mat-icon
+                            aria-label="Work title"
+                            svgIcon="as_work"></mat-icon> <span>{{profile.workTitle}}</span>
+                    </div>
+                </div>
+                <div class="location detail-item">
+                    <div fxLayout="row" fxLayoutAlign="start center">
+                        <mat-icon
+                            aria-label="Location"
+                            svgIcon="as_location"></mat-icon> <span>{{profile.location}}</span>
+                    </div>
+                </div>
+            </div>
+            <div fxLayout="column">
+                <div class="place-of-birth detail-item">
+                    <div fxLayout="row" fxLayoutAlign="start center">
+                        <mat-icon
+                            aria-label="Place of birth"
+                            svgIcon="as_place_of_birth"></mat-icon> <span>{{profile.placeOfBirth}}</span>
+                    </div>
+                </div>
+                <div class="birthday detail-item">
+                    <div fxLayout="row" fxLayoutAlign="start center">
+                        <mat-icon
+                            aria-label="Birthday"
+                            svgIcon="as_birthday"></mat-icon> <span>{{profile.dateOfBirth | date:'mediumDate'}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </as-profile-details>
+
+    <as-profile-bio>
+        <p>Lorem ipsum dolor sit amet, impetus definiebas at ius, odio movet quo ut.
+            Mel unum debet alterum ad, verear delicata per id, in vero tritani persecuti eam.
+            Ut nec eius audiam consectetuer, sea zril nemore cu. Utinam accusam et sed.
+            Legere omnium definiebas vim ex. Est ei aliquip scripta persequeris,
+            nihil convenire sea ei, ne error inciderint sadipscing quo. At case mnesarchum per.
+        </p>
+        <p>
+            Sale salutandi accommodare ne pro. In eam probo posse utamur. His te noster ponderum.
+            Mei ad perfecto ocurreret corrumpit, ius idque dicit sonet in. Lorem graece fabulas ad vel,
+            at deleniti partiendo expetenda has, ne possim constituam usu. Nam aperiri legendos te.
+        </p>
+    </as-profile-bio>
+
+    <as-profile-skills>
+        <div class="technical-skills" fxLayout="row">
+            <div
+                *ngFor="let skill of profile.skills"
+                class="skill">
+                {{ skill }}
+            </div>
+        </div>
+    </as-profile-skills>
+    
+</as-profile-template>

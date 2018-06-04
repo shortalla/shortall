@@ -1,0 +1,38 @@
+@import '~sass/styles.scss';
+
+.photos {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px;
+}
+
+.photo-container {
+    margin: 4px;
+    overflow: hidden;
+}
+
+.photo,
+.gradient {
+    cursor: pointer;
+    width: 20rem;
+    height: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photo {
+    transition: transform $transition-time linear;
+
+    &:hover {
+        transform: scale(1.1);
+        .gradient {
+            opacity: 0;
+        }
+    }
+}
+
+.gradient {
+    transition: opacity $transition-time linear;
+    background-image: linear-gradient(rgba(34, 180, 156, 0.3), rgba(64, 66, 64, 0.1));
+}

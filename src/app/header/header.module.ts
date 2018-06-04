@@ -1,14 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+
+import { HeaderComponent } from './header.component';
+import { HeaderNavComponent } from './header-nav/header-nav.component';
+
+import { appRoutes, appRouting } from '../app.routes';
 
 @NgModule({
   imports: [
     CommonModule,
     FlexLayoutModule,
+    appRouting,
   ],
   declarations: [
+    HeaderNavComponent,
     HeaderComponent,
   ],
   exports: [

@@ -1,0 +1,17 @@
+<div id="about">
+    <ul fxLayout="row" fxLayoutAlign="center center" id="nav">
+        <li>
+            <a
+                [routerLink]="['profile']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Profile</a>
+        </li>
+        <li>
+            <a
+                [routerLink]="['work']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Job</a>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

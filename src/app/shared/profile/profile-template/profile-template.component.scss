@@ -1,0 +1,36 @@
+@import '~sass/styles.scss';
+
+.wrapper {
+    max-width: 920px;
+    margin: auto;
+}
+
+.box {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: $theme-dark;
+    border-radius: 4px;
+
+    > * {
+        padding: 0.5rem;
+    }
+}
+
+h5 {
+    font-size: $font-size-sm;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    color: $theme-primary;
+    border-bottom: 1px solid $theme-primary;
+}
+
+.photo {
+    background-color: $theme-primary-dark;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+.overview {
+    width: 100%;
+}
