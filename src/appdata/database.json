@@ -93,5 +93,35 @@
                 "Spring MVC"
             ]
         }
+    ],
+    "project": [
+        {
+            "id": 1,
+            "profileId": 1,
+            "title": "Fypet",
+            "subtitle": "Final Year Project",
+            "startDate": 1451606400000,
+            "endDate": 1459468800000,
+            "tools": [
+                "Java",
+                "Android Studio",
+                "XML",
+                "SQLite",
+                "GIMP",
+                "ZXing"
+            ],
+            "description": "An application designed specifically for android devices. The user is given a blank canvas to design their own virtual pet. After naming and saving their creation, it is animated on the screen and is ready to be interacted with. The interactions available mirror those of a real life pet. The user performs simple tasks which incorporate scanning barcodes, performing certain touch gestures and using the device's camera.",
+            "photo": "/assets/projects/fypet/choose-face.png",
+            "screenshots": [
+                "/assets/projects/fypet/welcome-message.png",
+                "/assets/projects/fypet/choose-face.png",
+                "/assets/projects/fypet/draw-legs.png",
+                "/assets/projects/fypet/name.png",
+                "/assets/projects/fypet/move-location.png",
+                "/assets/projects/fypet/wash.png",
+                "/assets/projects/fypet/scan-chocolate.png",
+                "/assets/projects/fypet/barcode-scanner.png"
+            ]
+        }
     ]
 }

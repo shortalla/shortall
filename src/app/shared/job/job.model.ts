@@ -9,7 +9,7 @@ export class JobModel {
     public id: number;
 
     /* 
-	 * The id of the job
+	 * The id of the person
 	 */
     public profileId: number;
     

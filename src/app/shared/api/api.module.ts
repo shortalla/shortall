@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { HttpJobService } from './http-job.service'; 
 import { HttpPersonService } from './http-person.service'; 
+import { HttpProjectService } from './http-project.service'; 
 
 @NgModule({
 	imports: [
@@ -12,6 +13,7 @@ import { HttpPersonService } from './http-person.service';
 	providers: [
 		HttpJobService,
 		HttpPersonService,
+		HttpProjectService,
 	],
 	exports: [],
 })

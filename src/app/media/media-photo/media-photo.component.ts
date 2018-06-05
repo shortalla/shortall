@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MediaPhotoComponent implements OnInit {
-	photos: string[];
+	images: string[];
 	
 	constructor() {}
 
 	ngOnInit() {
-		this.photos = [
+		this.images = [
 			"/assets/photos/warschauer-sunset.jpg",
 			"/assets/photos/warschauer-buildings.jpg",
 			"/assets/photos/cafe-bird.jpg",
@@ -22,11 +22,5 @@ export class MediaPhotoComponent implements OnInit {
 			"/assets/photos/ostkreuz-station.jpg",
 			"/assets/photos/ostkreuz-tower.jpg"
 		];
-	}
-
-	public photoStyle(photo: string): Object {
-		return {
-			'background-image': `url('${photo}')`,
-		}
 	}
 }

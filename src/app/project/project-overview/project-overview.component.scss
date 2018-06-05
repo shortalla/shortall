@@ -1,1 +1,11 @@
 @import '~sass/styles.scss';
+.box {
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color: $theme-accent-dark;
+    border-radius: 4px;
+
+    > * {
+        padding: 0.5rem;
+    }
+}

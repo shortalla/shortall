@@ -18,10 +18,4 @@ export class MediaDigitalComponent implements OnInit {
 			"/assets/images/abstract-shapes.png",
 		];
 	}
-
-	public imageStyle(image: string): Object {
-		return {
-			'background-image': `url('${image}')`,
-		}
-	}
 }

@@ -37,7 +37,7 @@ export class JobService {
             endDate: new Date(json.endDate),
             location: json.location,
             website: json.website,
-            responsibilities: json.responsibilites,
+            responsibilities: json.responsibilities,
             photo: json.photo
         };
     }

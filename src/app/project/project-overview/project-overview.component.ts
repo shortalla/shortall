@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ProjectService } from '../../shared/project/project.service';
+import { ActivatedRoute } from '@angular/router';
+import { ProjectModel } from '../../shared/project/project.model';
 
 @Component({
 	selector: 'as-project-overview',
@@ -7,8 +10,13 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ProjectOverviewComponent implements OnInit {
-	
-	constructor() {}
+	project: ProjectModel;
 
-	ngOnInit() {}
+	constructor(private projectService: ProjectService) {}
+
+	ngOnInit() {
+		this.projectService.project(
+			1
+		).then(project => this.project = project);
+	}
 }
