@@ -1,17 +1,17 @@
 @import '~sass/styles.scss';
 
-.images {
+.vector {
     flex-wrap: wrap;
     justify-content: center;
     padding: 4px;
 }
 
-.image-container {
+.vector-container {
     margin: 4px;
     overflow: hidden;
 }
 
-.image {
+.vector {
     cursor: pointer;
     width: 20rem;
     height: 15rem;
@@ -20,7 +20,7 @@
     background-size: cover;
 }
 
-.image {
+.vector {
     transition: transform $transition-time linear;
 
     &:hover {

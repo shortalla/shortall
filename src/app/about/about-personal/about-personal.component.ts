@@ -18,19 +18,19 @@ export class AboutPersonalComponent implements OnInit {
 				private domSanitizer: DomSanitizer){
 		this.matIconRegistry.addSvgIcon(
 			'as_place_of_birth',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/icon/place-of-birth.svg')
+			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/place-of-birth.svg')
 		);
 		this.matIconRegistry.addSvgIcon(
 			'as_location',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/icon/location.svg')
+			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/location.svg')
 		);
 		this.matIconRegistry.addSvgIcon(
 			'as_work',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/icon/work.svg')
+			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/work.svg')
 		);
 		this.matIconRegistry.addSvgIcon(
 			'as_birthday',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/svg/icon/birthday.svg')
+			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/birthday.svg')
 		);
 	}
 

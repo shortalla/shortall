@@ -3,12 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { MediaComponent } from './media/media.component';
 import { AboutComponent } from './about/about.component';
+import { mediaRoutes } from './media/media.routes';
 import { aboutRoutes } from './about/about.routes';
 
 export const appRoutes: Routes = [
     {
         path: 'home',
         component: MediaComponent,
+        children: mediaRoutes,
     },{   
         path: 'about',
         component: AboutComponent,

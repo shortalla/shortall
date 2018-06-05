@@ -1,0 +1,10 @@
+<div class="vectors" fxLayout="row">
+    <div
+        class="vector-container"
+        *ngFor="let vector of vectors">
+        <div
+            [ngStyle]="vectorStyle(vector)"
+            class="vector">
+        </div>
+    </div>
+</div>

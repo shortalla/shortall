@@ -1,3 +1,23 @@
-<as-media-photo></as-media-photo>
-<as-media-digital></as-media-digital>
-<as-media-svg></as-media-svg>
+<div id="media">
+    <ul fxLayout="row" fxLayoutAlign="center center" id="nav">
+        <li>
+            <a
+                [routerLink]="['digital']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Digital</a>
+        </li>
+        <li>
+            <a
+                [routerLink]="['vector']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Vectors</a>
+        </li>
+        <li>
+            <a
+                [routerLink]="['photo']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Photos</a>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

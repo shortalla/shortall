@@ -8,6 +8,7 @@
 
 .photo-container {
     margin: 4px;
+    border: 1px solid $theme-background;
     overflow: hidden;
 }
 
@@ -34,5 +35,5 @@
 
 .gradient {
     transition: opacity $transition-time linear;
-    background-image: linear-gradient(rgba(34, 180, 156, 0.3), rgba(64, 66, 64, 0.1));
+    background-image: linear-gradient(rgba(64, 66, 64, 0.3), rgba(64, 66, 64, 0.1));
 }
