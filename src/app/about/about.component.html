@@ -6,11 +6,11 @@
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{exact: true}">Profile</a>
         </li>
-        <li>
+        <li *ngFor="let job of jobs()">
             <a
-                [routerLink]="['work']"
+                [routerLink]="['work', job.id]"
                 routerLinkActive="active"
-                [routerLinkActiveOptions]="{exact: true}">Job</a>
+                [routerLinkActiveOptions]="{exact: true}">{{job.company}}</a>
         </li>
     </ul>
     <router-outlet></router-outlet>

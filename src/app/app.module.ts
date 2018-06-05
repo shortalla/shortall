@@ -4,8 +4,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 
 import { HeaderModule } from './header/header.module';
-import { AboutModule } from './about/about.module';
 import { MediaModule } from './media/media.module';
+import { ProjectModule } from './project/project.module';
+import { AboutModule } from './about/about.module';
 import { FooterModule } from './footer/footer.module';
 
 import { MediaComponent } from './media/media.component';
@@ -22,8 +23,9 @@ import { appRouting } from './app.routes';
     BrowserModule,
     BrowserAnimationsModule,
     HeaderModule,
-    AboutModule,
     MediaModule,
+    ProjectModule,
+    AboutModule,
     FooterModule,
     appRouting,
   ],

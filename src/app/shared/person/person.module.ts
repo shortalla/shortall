@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 
 import { HttpClientModule } from '@angular/common/http';
-import { HttpJobService } from './http-job.service'; 
-import { HttpPersonService } from './http-person.service'; 
+import { PersonService } from './person.service'; 
 
 @NgModule({
 	imports: [
@@ -10,9 +9,8 @@ import { HttpPersonService } from './http-person.service';
 	],
 	declarations: [],
 	providers: [
-		HttpJobService,
-		HttpPersonService,
+		PersonService,
 	],
 	exports: [],
 })
-export class ApiModule { }
+export class PersonModule { }

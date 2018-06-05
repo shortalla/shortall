@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { ProfileTemplateComponent } from './profile-template.component';
+import { ProfileTemplateComponent } from './profile-template/profile-template.component';
 
 @NgModule({
 	imports: [
@@ -17,4 +17,4 @@ import { ProfileTemplateComponent } from './profile-template.component';
 		ProfileTemplateComponent
 	],
 })
-export class ProfileTemplateModule { }
+export class ProfileModule { }

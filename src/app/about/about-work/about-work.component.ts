@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileService } from '../../shared/profile/profile.service';
-import { JobModel } from '../../shared/profile/job';
+import { JobService } from '../../shared/job/job.service';
+import { JobModel } from '../../shared/job/job.model';
 import { MatIconRegistry } from "@angular/material/icon";
 import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
+import { IconRegistryService } from '../../shared/icon/icon-registry.service';
 
 @Component({
 	selector: 'as-about-work',
@@ -13,28 +15,18 @@ import { DomSanitizer } from '@angular/platform-browser';
 export class AboutWorkComponent implements OnInit {
 	job: JobModel;
 
-	constructor(private profileService: ProfileService,
-				private matIconRegistry: MatIconRegistry,
-				private domSanitizer: DomSanitizer){
-		this.matIconRegistry.addSvgIcon(
-			'as_place_of_birth',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/place-of-birth.svg')
-		);
-		this.matIconRegistry.addSvgIcon(
-			'as_location',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/location.svg')
-		);
-		this.matIconRegistry.addSvgIcon(
-			'as_work',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/work.svg')
-		);
-		this.matIconRegistry.addSvgIcon(
-			'as_birthday',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/birthday.svg')
-		);
-	}
+	constructor(private jobService: JobService,
+				private iconRegistryService: IconRegistryService,
+				private activatedRoute: ActivatedRoute) {}
 
 	ngOnInit() {
-		this.job = this.profileService.job;
+		this.activatedRoute.params.subscribe(
+			data => {
+				const params = this.activatedRoute.snapshot.params;
+				this.jobService.job(
+					params.id
+				).then(job => this.job = job);
+			}
+		);
 	}
 }

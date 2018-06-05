@@ -1,12 +1,12 @@
 
 /**
- * Model for the personal profile
+ * Model for a person
  */
-export class ProfileModel {
+export class PersonModel {
 	/* 
 	 * The id of the person
 	 */
-	public profileId: number;
+	public id: number;
 
 	/* 
 	 * The first name of the person

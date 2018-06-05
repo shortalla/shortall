@@ -6,7 +6,7 @@ export class JobModel {
     /* 
 	 * The id of the job
 	 */
-    public jobId: number;
+    public id: number;
 
     /* 
 	 * The id of the job

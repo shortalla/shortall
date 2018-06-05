@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileService } from '../../shared/profile/profile.service';
-import { ProfileModel } from '../../shared/profile/profile';
-import { MatIconRegistry } from "@angular/material/icon";
-import { DomSanitizer } from '@angular/platform-browser';
+import { PersonService } from '../../shared/person/person.service';
+import { PersonModel } from '../../shared/person/person.model';
+import { HttpPersonService } from '../../shared/api/http-person.service';
+import { IconRegistryService } from '../../shared/icon/icon-registry.service';
 
 @Component({
 	selector: 'as-about-personal',
@@ -11,30 +11,12 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 
 export class AboutPersonalComponent implements OnInit {
-	profile: ProfileModel;
+	person: PersonModel;
 
-	constructor(private profileService: ProfileService,
-				private matIconRegistry: MatIconRegistry,
-				private domSanitizer: DomSanitizer){
-		this.matIconRegistry.addSvgIcon(
-			'as_place_of_birth',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/place-of-birth.svg')
-		);
-		this.matIconRegistry.addSvgIcon(
-			'as_location',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/location.svg')
-		);
-		this.matIconRegistry.addSvgIcon(
-			'as_work',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/work.svg')
-		);
-		this.matIconRegistry.addSvgIcon(
-			'as_birthday',
-			this.domSanitizer.bypassSecurityTrustResourceUrl('/assets/icons/birthday.svg')
-		);
-	}
+	constructor(private personService: PersonService,
+				private iconRegistryService: IconRegistryService) {}
 
 	ngOnInit() {
-		this.profile = this.profileService.profile;
+		this.personService.person(1).then(person => this.person = person);
 	}
 }

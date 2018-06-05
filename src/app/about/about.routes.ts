@@ -9,7 +9,7 @@ export const aboutRoutes: Routes = [
         path: 'profile',
         component: AboutPersonalComponent,
     }, {
-        path: 'work',
+        path: 'work/:id',
         component: AboutWorkComponent,
     }, {
         path: '',

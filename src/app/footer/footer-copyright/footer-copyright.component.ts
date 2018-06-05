@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PROFILE_DATA } from '../../data/profile';
 
 @Component({
 	selector: 'as-footer-copyright',
@@ -10,10 +9,11 @@ import { PROFILE_DATA } from '../../data/profile';
 export class FooterCopyrightComponent implements OnInit {
 	name: string;
 	year: number;
+
 	constructor() {}
 
 	ngOnInit() {
-		this.name = `${PROFILE_DATA.firstName} ${PROFILE_DATA.lastName}`;
+		this.name = 'Andrew Shortall';
 		const date = new Date();
 		this.year = date.getFullYear();
 	}

@@ -1,8 +1,8 @@
-<as-profile-template>
+<as-profile-template *ngIf="job">
     <as-profile-photo>
         <img
             alt="Photo"
-            src="https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/e8/33/27/e83327c6-509c-c03f-93a1-7403feb30bae/AppIcon-1x_U007emarketing-85-220-0-9.png/246x0w.jpg" />
+            [src]="job.photo" />
     </as-profile-photo>
     <as-profile-title>
         <span class="last-name">{{job.company}}</span>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { PROFILE_DATA } from '../../data/profile';
 
 @Component({
 	selector: 'as-header-nav',
@@ -8,12 +7,14 @@ import { PROFILE_DATA } from '../../data/profile';
 })
 
 export class HeaderNavComponent implements OnInit {
-	private profile: Object;
+	private firstName: string;
+	private lastName: string;
 
 	constructor() {}
 
 	ngOnInit() {
-		this.profile = PROFILE_DATA;
+		this.firstName = 'Andrew';
+		this.lastName = 'Shortall';
 	}
 
 }

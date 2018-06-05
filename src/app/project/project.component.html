@@ -1,0 +1,11 @@
+<div id="project">
+    <ul fxLayout="row" fxLayoutAlign="center center" id="nav">
+        <li>
+            <a
+                [routerLink]="['overview']"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">Overview</a>
+        </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>
