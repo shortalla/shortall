@@ -1,17 +1,17 @@
 @import '~sass/styles.scss';
 
-.photos {
+.images {
     flex-wrap: wrap;
     justify-content: center;
     padding: 4px;
 }
 
-.photo-container {
+.image-container {
     margin: 4px;
     overflow: hidden;
 }
 
-.photo,
+.image,
 .gradient {
     cursor: pointer;
     width: 20rem;
@@ -21,7 +21,7 @@
     background-size: cover;
 }
 
-.photo {
+.image {
     transition: transform $transition-time linear;
 
     &:hover {

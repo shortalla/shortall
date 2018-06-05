@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 import { FooterLinksComponent } from './footer-links/footer-links.component';
+import { FooterCopyrightComponent } from './footer-copyright/footer-copyright.component';
 import { FooterComponent } from './footer.component';
 
 @NgModule({
@@ -11,6 +12,7 @@ import { FooterComponent } from './footer.component';
 		FlexLayoutModule,
 	],
 	declarations: [
+		FooterCopyrightComponent,
 		FooterLinksComponent,
 		FooterComponent,
 	],

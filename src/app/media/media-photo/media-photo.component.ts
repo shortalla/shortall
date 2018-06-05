@@ -13,14 +13,14 @@ export class MediaPhotoComponent implements OnInit {
 
 	ngOnInit() {
 		this.photos = [
-			"/assets/images/warschauer-sunset.jpg",
-			"/assets/images/warschauer-buildings.jpg",
-			"/assets/images/cafe-bird.jpg",
-			"/assets/images/berlin-autumn.jpg",
-			"/assets/images/berlin-city-view.jpg",
-			"/assets/images/ostkreuz-street-lights.jpg",
-			"/assets/images/ostkreuz-station.jpg",
-			"/assets/images/ostkreuz-tower.jpg"
+			"/assets/photos/warschauer-sunset.jpg",
+			"/assets/photos/warschauer-buildings.jpg",
+			"/assets/photos/cafe-bird.jpg",
+			"/assets/photos/berlin-autumn.jpg",
+			"/assets/photos/berlin-city-view.jpg",
+			"/assets/photos/ostkreuz-street-lights.jpg",
+			"/assets/photos/ostkreuz-station.jpg",
+			"/assets/photos/ostkreuz-tower.jpg"
 		];
 	}
 

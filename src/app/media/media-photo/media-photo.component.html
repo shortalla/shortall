@@ -1,0 +1,11 @@
+<div class="photos" fxLayout="row">
+    <div
+        class="photo-container"
+        *ngFor="let photo of photos">
+        <div
+            [ngStyle]="photoStyle(photo)"
+            class="photo">
+            <div class="gradient"></div>
+        </div>
+    </div>
+</div>

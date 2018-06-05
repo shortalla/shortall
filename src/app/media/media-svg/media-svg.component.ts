@@ -7,8 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MediaSvgComponent implements OnInit {
-
+	images: string[];
+	
 	constructor() {}
 
-	ngOnInit() {}
+	ngOnInit() {
+		this.images = [
+			"/assets/svg/andrew.svg",
+		];
+	}
+
+	public imageStyle(image: string): Object {
+		return {
+			'background-image': `url('${image}')`,
+		}
+	}
 }
