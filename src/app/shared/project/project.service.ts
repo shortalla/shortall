@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpProjectService } from '../api/http-project.service';
 import { ProjectModel } from './project.model';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Injectable()
 export class ProjectService {
@@ -11,7 +12,8 @@ export class ProjectService {
         return this._list;
     }
     
-    constructor(private httpProjectService: HttpProjectService) {
+    constructor(private httpProjectService: HttpProjectService,
+                private domSanitizer: DomSanitizer) {
         this.initList();
     }
 
@@ -36,7 +38,7 @@ export class ProjectService {
             endDate: new Date(json.endDate),
             description: json.description,
             tools: json.tools,
-            photo: json.photo,
+            photo: this.domSanitizer.bypassSecurityTrustResourceUrl(json.photo),
             screenshots: json.screenshots,
         };
     }

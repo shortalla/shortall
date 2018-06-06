@@ -1,54 +1,52 @@
-<as-profile-template *ngIf="person">
+<div
+    class="wrapper"
+    *ngIf="person">
+    <as-profile-template
+        [image]="person.photo">
+        <as-profile-title>
+            <span class="first-name">{{person.firstName}}</span>
+            <span class="last-name">{{person.lastName}}</span>
+        </as-profile-title>
 
-    <as-profile-photo>
-        <img
-            alt="Photo"
-            [src]="person.photo" />
-    </as-profile-photo>
-
-    <as-profile-title>
-        <span class="first-name">{{person.firstName}}</span>
-        <span class="last-name">{{person.lastName}}</span>
-    </as-profile-title>
-
-    <as-profile-details>
-        <div class="detail-items" fxLayout="row" fxLayout="space-between center">
-            <div fxLayout="column">
-                <div class="work-title detail-item">
-                    <div fxLayout="row" fxLayoutAlign="start center">
-                        <mat-icon
-                            aria-label="Work title"
-                            svgIcon="as_work"></mat-icon> <span>{{person.workTitle}}</span>
+        <as-profile-details>
+            <div class="detail-items" fxLayout="row" fxLayout="space-between center">
+                <div fxLayout="column">
+                    <div class="work-title detail-item">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon
+                                aria-label="Work title"
+                                svgIcon="as_work"></mat-icon> <span>{{person.workTitle}}</span>
+                        </div>
+                    </div>
+                    <div class="location detail-item">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon
+                                aria-label="Location"
+                                svgIcon="as_location"></mat-icon> <span>{{person.location}}</span>
+                        </div>
                     </div>
                 </div>
-                <div class="location detail-item">
-                    <div fxLayout="row" fxLayoutAlign="start center">
-                        <mat-icon
-                            aria-label="Location"
-                            svgIcon="as_location"></mat-icon> <span>{{person.location}}</span>
+                <div fxLayout="column">
+                    <div class="place-of-birth detail-item">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon
+                                aria-label="Place of birth"
+                                svgIcon="as_place_of_birth"></mat-icon> <span>{{person.placeOfBirth}}</span>
+                        </div>
+                    </div>
+                    <div class="birthday detail-item">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon
+                                aria-label="Birthday"
+                                svgIcon="as_birthday"></mat-icon> <span>{{person.dateOfBirth | date:'mediumDate'}}</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div fxLayout="column">
-                <div class="place-of-birth detail-item">
-                    <div fxLayout="row" fxLayoutAlign="start center">
-                        <mat-icon
-                            aria-label="Place of birth"
-                            svgIcon="as_place_of_birth"></mat-icon> <span>{{person.placeOfBirth}}</span>
-                    </div>
-                </div>
-                <div class="birthday detail-item">
-                    <div fxLayout="row" fxLayoutAlign="start center">
-                        <mat-icon
-                            aria-label="Birthday"
-                            svgIcon="as_birthday"></mat-icon> <span>{{person.dateOfBirth | date:'mediumDate'}}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </as-profile-details>
+        </as-profile-details>
+    </as-profile-template>
 
-    <as-profile-bio>
+    <as-profile-box heading="Summary">
         <p>Lorem ipsum dolor sit amet, impetus definiebas at ius, odio movet quo ut.
             Mel unum debet alterum ad, verear delicata per id, in vero tritani persecuti eam.
             Ut nec eius audiam consectetuer, sea zril nemore cu. Utinam accusam et sed.
@@ -60,9 +58,9 @@
             Mei ad perfecto ocurreret corrumpit, ius idque dicit sonet in. Lorem graece fabulas ad vel,
             at deleniti partiendo expetenda has, ne possim constituam usu. Nam aperiri legendos te.
         </p>
-    </as-profile-bio>
+    </as-profile-box>
 
-    <as-profile-skills>
+    <as-profile-box heading="Skills">
         <div class="technical-skills" fxLayout="row">
             <div
                 *ngFor="let skill of person.skills"
@@ -70,6 +68,5 @@
                 {{ skill }}
             </div>
         </div>
-    </as-profile-skills>
-    
-</as-profile-template>
+    </as-profile-box>
+</div>

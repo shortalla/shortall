@@ -1,3 +1,4 @@
+import { SafeResourceUrl } from "@angular/platform-browser";
 
 /**
  * Model for a specific job
@@ -51,5 +52,5 @@ export class JobModel {
 	/**
 	 * The photo of the company
 	 */
-	public photo: string;
+	public photo: SafeResourceUrl;
 }

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpJobService } from '../api/http-job.service';
+import { DomSanitizer } from '@angular/platform-browser';
 import { JobModel } from './job.model';
 import 'rxjs/add/operator/map';
 
@@ -12,7 +13,8 @@ export class JobService {
         return this._list;
     }
     
-    constructor(private httpJobService: HttpJobService) {
+    constructor(private httpJobService: HttpJobService,
+                private domSanitizer: DomSanitizer) {
         this.initList();
     }
 
@@ -38,7 +40,7 @@ export class JobService {
             location: json.location,
             website: json.website,
             responsibilities: json.responsibilities,
-            photo: json.photo
+            photo: this.domSanitizer.bypassSecurityTrustResourceUrl(json.photo)
         };
     }
 

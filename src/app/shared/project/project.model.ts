@@ -1,3 +1,4 @@
+import { SafeResourceUrl } from "@angular/platform-browser";
 
 /**
  * Model for a project
@@ -46,7 +47,7 @@ export class ProjectModel {
 	/**
 	 * The photo of the project
 	 */
-	public photo: string;
+	public photo: SafeResourceUrl;
 
 	/**
 	 * Screenshots of the project

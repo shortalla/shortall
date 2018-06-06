@@ -1,36 +1,19 @@
 <div class="wrapper">
     <div fxLayout="row">
-        <div class="photo-container box">
-            <div class="photo">
-                <ng-content select="as-profile-photo"></ng-content>
+        <as-profile-box>
+            <div class="image-container">
+                <div class="image">
+                    <img [src]="image" alt="Profile image" />
+                </div>
             </div>
-        </div>
+        </as-profile-box>
         <div class="overview" fxLayout="column" fxLayoutAlign="start stretch">
-            <div class="name-container box">
-                <div class="name">
-                    <ng-content select="as-profile-title"></ng-content>
-                </div>
-            </div>
-            <div class="details-container box">
-                <h5>Details</h5>
-                <div class="details">
-                    <ng-content select="as-profile-details"></ng-content>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="bio-container box">
-        <h5>Bio</h5>
-        <div class="bio">
-            <ng-content select="as-profile-bio"></ng-content>
-        </div>
-    </div>
-
-    <div class="skills-container box">
-        <h5>Skills</h5>
-        <div class="skills">
-            <ng-content select="as-profile-skills"></ng-content>
+            <as-profile-box>
+                <ng-content select="as-profile-title"></ng-content>
+            </as-profile-box>
+            <as-profile-box>
+                <ng-content select="as-profile-details"></ng-content>
+            </as-profile-box>
         </div>
     </div>
 </div>

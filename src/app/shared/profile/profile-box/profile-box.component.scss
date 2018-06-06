@@ -1,11 +1,7 @@
 @import '~sass/styles.scss';
 
-.wrapper {
-    max-width: 920px;
-    margin: auto;
-}
-
 .box {
+    max-width: 920px;
     margin: 0.5rem;
     padding: 0.5rem;
     background-color: $theme-dark;
@@ -22,22 +18,4 @@ h5 {
     text-transform: uppercase;
     color: $theme-primary;
     border-bottom: 1px solid $theme-primary;
-}
-
-.image-container {
-    background-color: $theme-primary-dark;
-    height: 220px;
-    width: 220px;
-    padding: 4px;
-    border-radius: 50%;
-}
-
-img {
-    border-radius: 50%;
-    height: 100%;
-    width: 100%;
-}
-
-.overview {
-    width: 100%;
 }

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
 import { HttpPersonService } from '../api/http-person.service';
+import { DomSanitizer } from '@angular/platform-browser';
 import { PersonModel } from './person.model';
 
 @Injectable()
@@ -11,7 +12,8 @@ export class PersonService {
         return this._list;
     }
     
-    constructor(private httpPersonService: HttpPersonService) {
+    constructor(private httpPersonService: HttpPersonService,
+                private domSanitizer: DomSanitizer) {
         this.initList();
     }
 
@@ -36,7 +38,7 @@ export class PersonService {
             location: json.location,
             workTitle: json.workTitle,
             skills: json.skills,
-            photo: json.photo
+            photo: this.domSanitizer.bypassSecurityTrustResourceUrl(json.photo)
         };
     }
 

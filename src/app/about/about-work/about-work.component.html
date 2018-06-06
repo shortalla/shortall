@@ -1,51 +1,50 @@
-<as-profile-template *ngIf="job">
-    <as-profile-photo>
-        <img
-            alt="Photo"
-            [src]="job.photo" />
-    </as-profile-photo>
-    <as-profile-title>
-        <span class="last-name">{{job.company}}</span>
-    </as-profile-title>
-    <as-profile-details>
-        <div class="detail-items" fxLayout="row" fxLayout="space-between center">
-            <div fxLayout="column">
-                <div class="work-title detail-item">
-                    <div fxLayout="row" fxLayoutAlign="start center">
-                        <mat-icon
-                            aria-label="Work title"
-                            svgIcon="as_work"></mat-icon> <span>{{job.title}}</span>
+<div
+    class="wrapper"
+    *ngIf="job">
+    <as-profile-template [image]="job.photo" >
+        <as-profile-title>
+            <span class="last-name">{{job.company}}</span>
+        </as-profile-title>
+        <as-profile-details>
+            <div class="detail-items" fxLayout="row" fxLayout="space-between center">
+                <div fxLayout="column">
+                    <div class="work-title detail-item">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon
+                                aria-label="Work title"
+                                svgIcon="as_work"></mat-icon> <span>{{job.title}}</span>
+                        </div>
+                    </div>
+                    <div class="location detail-item">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon
+                                aria-label="Location"
+                                svgIcon="as_location"></mat-icon> <span>{{job.location}}</span>
+                        </div>
                     </div>
                 </div>
-                <div class="location detail-item">
-                    <div fxLayout="row" fxLayoutAlign="start center">
-                        <mat-icon
-                            aria-label="Location"
-                            svgIcon="as_location"></mat-icon> <span>{{job.location}}</span>
+                <div fxLayout="column">
+                    <div class="place-of-birth detail-item">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon
+                                aria-label="Place of birth"
+                                svgIcon="as_place_of_birth"></mat-icon> <a href="{{job.website}}">{{job.website}}</a>
+                        </div>
+                    </div>
+                    <div class="birthday detail-item">
+                        <div fxLayout="row" fxLayoutAlign="start center">
+                            <mat-icon
+                                aria-label="Birthday"
+                                svgIcon="as_birthday"></mat-icon>
+                                <span>{{job.startDate | date:'shortDate'}}</span> &ndash;
+                                <span>{{job.endDate | date:'shortDate'}}</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div fxLayout="column">
-                <div class="place-of-birth detail-item">
-                    <div fxLayout="row" fxLayoutAlign="start center">
-                        <mat-icon
-                            aria-label="Place of birth"
-                            svgIcon="as_place_of_birth"></mat-icon> <a href="{{job.website}}">{{job.website}}</a>
-                    </div>
-                </div>
-                <div class="birthday detail-item">
-                    <div fxLayout="row" fxLayoutAlign="start center">
-                        <mat-icon
-                            aria-label="Birthday"
-                            svgIcon="as_birthday"></mat-icon>
-                            <span>{{job.startDate | date:'shortDate'}}</span> &ndash;
-                            <span>{{job.endDate | date:'shortDate'}}</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </as-profile-details>
-    <as-profile-bio>
+        </as-profile-details>
+    </as-profile-template>
+    <as-profile-box heading="Summary">
         <p>Lorem ipsum dolor sit amet, impetus definiebas at ius, odio movet quo ut.
             Mel unum debet alterum ad, verear delicata per id, in vero tritani persecuti eam.
             Ut nec eius audiam consectetuer, sea zril nemore cu. Utinam accusam et sed.
@@ -57,8 +56,8 @@
             Mei ad perfecto ocurreret corrumpit, ius idque dicit sonet in. Lorem graece fabulas ad vel,
             at deleniti partiendo expetenda has, ne possim constituam usu. Nam aperiri legendos te.
         </p>
-    </as-profile-bio>
-    <as-profile-skills>
+    </as-profile-box>
+    <as-profile-box heading="Skills">
         <div class="technical-skills" fxLayout="row">
             <div
                 *ngFor="let task of job.responsibilities"
@@ -66,5 +65,5 @@
                 {{ task }}
             </div>
         </div>
-    </as-profile-skills>
-</as-profile-template>
+    </as-profile-box>
+</div>

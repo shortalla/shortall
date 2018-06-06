@@ -1,3 +1,4 @@
+import { SafeResourceUrl } from "@angular/platform-browser";
 
 /**
  * Model for a person
@@ -46,5 +47,5 @@ export class PersonModel {
 	/**
 	 * The photo of the person
 	 */
-	public photo: string;
+	public photo: SafeResourceUrl;
 }

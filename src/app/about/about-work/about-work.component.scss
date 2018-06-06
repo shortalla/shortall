@@ -38,20 +38,16 @@ as-profile-details {
     }
 }
 
-as-profile-bio {
-    p {
-        line-height: 1.4;
-        padding: 0.5rem;
-    }
+p {
+    line-height: 1.4;
+    padding: 0.5rem;
 }
 
-as-profile-skills {
-    .technical-skills {
-        flex-wrap: wrap;
-    }
+.technical-skills {
+    flex-wrap: wrap;
+}
 
-    .skill {
-        width: 12.5rem;
-        padding: 0.4rem 1.6rem;
-    }
+.skill {
+    width: 12.5rem;
+    padding: 0.4rem 1.6rem;
 }
