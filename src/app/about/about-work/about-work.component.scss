@@ -40,6 +40,13 @@ p {
     padding: 0.5rem;
 }
 
+li {
+    line-height: 1.4;
+    padding: 0.5rem;
+    list-style-type: disc;
+    margin-left: 1.5rem;
+}
+
 .tools-container {
     flex-wrap: wrap;
 }

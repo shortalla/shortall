@@ -15,32 +15,37 @@
                             <div fxLayout="row" fxLayoutAlign="start center">
                                 <mat-icon
                                     aria-label="Work title"
-                                    svgIcon="as_work"></mat-icon> <span>{{job.title}}</span>
+                                    svgIcon="as_work"></mat-icon>
+                                <span>{{job.title}}</span>
                             </div>
                         </div>
                         <div class="location detail-item">
                             <div fxLayout="row" fxLayoutAlign="start center">
                                 <mat-icon
                                     aria-label="Location"
-                                    svgIcon="as_location"></mat-icon> <span>{{job.location}}</span>
+                                    svgIcon="as_location"></mat-icon>
+                                <span>{{job.location}}</span>
                             </div>
                         </div>
                     </div>
                     <div fxLayout="column">
-                        <div class="place-of-birth detail-item">
+                        <div class="website detail-item">
                             <div fxLayout="row" fxLayoutAlign="start center">
                                 <mat-icon
-                                    aria-label="Place of birth"
-                                    svgIcon="as_place_of_birth"></mat-icon> <a href="{{job.website}}">{{job.website}}</a>
+                                    aria-label="Website"
+                                    svgIcon="as_website"></mat-icon>
+                                <a href="{{job.website}}">{{job.website}}</a>
                             </div>
                         </div>
-                        <div class="birthday detail-item">
+                        <div class="date-range detail-item">
                             <div fxLayout="row" fxLayoutAlign="start center">
                                 <mat-icon
-                                    aria-label="Birthday"
-                                    svgIcon="as_birthday"></mat-icon>
+                                    aria-label="Date range"
+                                    svgIcon="as_date"></mat-icon>
+                                <div>
                                     <span>{{job.startDate | date:'shortDate'}}</span> &ndash;
                                     <span>{{job.endDate | date:'shortDate'}}</span>
+                                </div>
                             </div>
                         </div>
                     </div>

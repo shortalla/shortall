@@ -40,6 +40,11 @@ export class ProjectModel {
 	public tools: string[];
 
 	/* 
+	 * A link to the project
+	 */
+	public link: SafeResourceUrl;
+
+	/* 
 	 * The description of the project
 	 */
 	public description: string;

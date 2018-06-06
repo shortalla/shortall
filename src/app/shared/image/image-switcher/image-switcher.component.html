@@ -1,0 +1,31 @@
+<div
+    class="wrapper"
+    fxLayout="row"
+    fxLayoutAlign="center center">
+    <button
+        [disabled]="isFirst()"
+        class="button-previous"
+        (click)="previous()"
+        mat-icon-button>
+        <mat-icon
+            aria-label="Previous"
+            svgIcon="as_arrow_left"></mat-icon>
+    </button>
+
+    <div
+        class="container"
+        fxLayout="row"
+        fxLayoutAlign="center center">
+        <img [src]="image()">
+    </div>
+
+    <button
+        [disabled]="isLast()"
+        class="button-next"
+        (click)="next()"
+        mat-icon-button>
+        <mat-icon
+            aria-label="Next"
+            svgIcon="as_arrow_right"></mat-icon>
+    </button>
+</div>

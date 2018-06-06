@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImageOrientation } from '../../shared/image/image-orientation.enum';
+import { SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
 	selector: 'as-media-photo',
@@ -8,7 +9,7 @@ import { ImageOrientation } from '../../shared/image/image-orientation.enum';
 })
 
 export class MediaPhotoComponent implements OnInit {
-	images: string[];
+	images: SafeResourceUrl[];
 	orientation: ImageOrientation;
 	
 	constructor() {}

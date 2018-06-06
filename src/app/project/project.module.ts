@@ -3,10 +3,11 @@ import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ImageModule } from '../shared/image/image.module';
 import { ProfileModule } from '../shared/profile/profile.module';
+import { MatIconModule } from "@angular/material/icon";
+import { IconModule } from '../shared/icon/icon.module';
 import { appRouting } from '../app.routes';
 
 import { ProjectOverviewComponent } from './project-overview/project-overview.component';
-import { ProjectScreensComponent } from './project-screens/project-screens.component';
 import { ProjectComponent } from './project.component';
 
 import { ProjectService } from '../shared/project/project.service';
@@ -17,11 +18,12 @@ import { ProjectService } from '../shared/project/project.service';
 		FlexLayoutModule,
 		ImageModule,
 		ProfileModule,
+		MatIconModule,
+		IconModule,
 		appRouting,
 	],
 	declarations: [
 		ProjectOverviewComponent,
-		ProjectScreensComponent,
 		ProjectComponent,
 	],
 	providers: [

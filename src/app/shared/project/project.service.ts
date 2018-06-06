@@ -40,6 +40,7 @@ export class ProjectService {
             tools: json.tools,
             photo: this.domSanitizer.bypassSecurityTrustResourceUrl(json.photo),
             screenshots: json.screenshots,
+            link: json.link
         };
     }
 

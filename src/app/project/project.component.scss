@@ -1,13 +1,13 @@
 @import '~sass/styles.scss';
 
 #project {
-    background-color: $theme-light-dark;
+    background-color: $theme-dark-dark;
     background: repeating-linear-gradient(
         45deg,
-        $theme-accent-dark,
-        $theme-accent-dark 2px,
-        $theme-accent 2px,
-        $theme-accent 4px
+        $theme-dark-dark,
+        $theme-dark-dark 2px,
+        $theme-dark 2px,
+        $theme-dark 4px
     );
     color: $theme-background;
     padding: 2rem;

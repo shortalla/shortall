@@ -11,13 +11,23 @@
             <as-profile-details>
                 <div class="detail-items" fxLayout="row" fxLayout="space-between center">
                     <div fxLayout="column">
-                        <div class="birthday detail-item">
+                        <div class="link detail-item">
                             <div fxLayout="row" fxLayoutAlign="start center">
                                 <mat-icon
-                                    aria-label="Birthday"
-                                    svgIcon="as_birthday"></mat-icon>
-                                    <span>{{project.startDate | date:'shortDate'}}</span> &ndash;
-                                    <span>{{project.endDate | date:'shortDate'}}</span>
+                                    aria-label="Website"
+                                    svgIcon="as_website"></mat-icon>
+                                <a href="{{project.link}}">{{project.link}}</a>
+                            </div>
+                        </div>
+                        <div class="date-range detail-item">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <mat-icon
+                                    aria-label="Date range"
+                                    svgIcon="as_date"></mat-icon>
+                                <div>
+                                    <span>{{project.startDate | date:'mediumDate'}}</span> &ndash;
+                                    <span>{{project.endDate | date:'mediumDate'}}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -37,6 +47,12 @@
                     {{ tool }}
                 </div>
             </div>
+        </as-profile-box>
+
+        <as-profile-box heading="Screens">
+            <as-image-switcher
+                [images]="project.screenshots">
+            </as-image-switcher>
         </as-profile-box>
     </div>
 </div>

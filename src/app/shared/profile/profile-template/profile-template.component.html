@@ -1,5 +1,5 @@
 <div class="wrapper">
-    <div fxLayout="row">
+    <div fxLayout="row" fxLayout.xs="column">
         <as-profile-box>
             <div class="image-container">
                 <div class="image">
@@ -7,7 +7,7 @@
                 </div>
             </div>
         </as-profile-box>
-        <div class="overview" fxLayout="column" fxLayoutAlign="start stretch">
+        <div class="overview" fxLayout="column" fxLayoutAlign="space-between stretch">
             <as-profile-box>
                 <ng-content select="as-profile-title"></ng-content>
             </as-profile-box>
