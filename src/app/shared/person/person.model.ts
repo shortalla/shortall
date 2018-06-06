@@ -48,4 +48,9 @@ export class PersonModel {
 	 * The photo of the person
 	 */
 	public photo: SafeResourceUrl;
+
+	/**
+	 * A summary of the person
+	 */
+	public summary: string;
 }

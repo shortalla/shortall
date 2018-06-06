@@ -1,11 +1,8 @@
 @import '~sass/styles.scss';
 
-as-profile-photo {
-    img {
-        border-radius: 50%;
-        height: 100%;
-        width: 100%;
-    }
+.wrapper {
+    max-width: 920px;
+    margin: auto;
 }
 
 as-profile-title {
@@ -43,11 +40,11 @@ p {
     padding: 0.5rem;
 }
 
-.technical-skills {
+.tools-container {
     flex-wrap: wrap;
 }
 
-.skill {
+.tool {
     width: 12.5rem;
     padding: 0.4rem 1.6rem;
 }

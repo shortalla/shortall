@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
+import { ImageThumbnailComponent } from './image-thumbnail/image-thumbnail.component';
 import { ImageListComponent } from './image-list/image-list.component';
 
 @NgModule({
@@ -10,6 +11,7 @@ import { ImageListComponent } from './image-list/image-list.component';
 		FlexLayoutModule,
 	],
 	declarations: [
+		ImageThumbnailComponent,
 		ImageListComponent,
 	],
 	exports: [

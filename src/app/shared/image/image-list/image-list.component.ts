@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { ImageOrientation } from '../image-orientation.enum';
+import { SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
 	selector: 'as-image-list',
@@ -7,15 +9,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class ImageListComponent implements OnInit {
-	@Input() images: string[];
+	@Input() images: SafeResourceUrl[];
+	@Input() hasBorder?: boolean;
+	@Input() hasGradient?: boolean;
+	@Input() orientation?: ImageOrientation;
 	
 	constructor() {}
 
 	ngOnInit() {}
-
-	public imageStyle(image: string): Object {
-		return {
-			'background-image': `url('${image}')`,
-		}
-	}
 }

@@ -47,7 +47,12 @@ export class JobModel {
 	/* 
 	 * The responsibilities of this job
 	 */
-	public responsibilities: string[];
+	public tasks: string[];
+
+	/* 
+	 * The tools used for this job
+	 */
+	public tools: string[];
 	
 	/**
 	 * The photo of the company

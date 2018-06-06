@@ -1,13 +1,11 @@
 <div
     class="images" 
     fxLayout="row">
-    <div
-        class="image-container"
-        *ngFor="let image of images">
-        <div
-            [ngStyle]="imageStyle(image)"
-            class="image">
-            <div class="gradient"></div>
-        </div>
-    </div>
+    <as-image-thumbnail
+        *ngFor="let image of images"
+        [image]="image"
+        [hasBorder]="hasBorder"
+        [hasGradient]="hasGradient"
+        [orientation]="orientation">
+    </as-image-thumbnail>
 </div>

@@ -1,38 +1,42 @@
 <div
-    class="wrapper"
-    *ngIf="project">
-    <as-profile-template [image]="project.photo">
-        <as-profile-title>
-            <span class="last-name">{{project.title}}</span><span class="last-name">: {{project.subtitle}}</span>
-        </as-profile-title>
-        <as-profile-details>
-            <div class="detail-items" fxLayout="row" fxLayout="space-between center">
-                <div fxLayout="column">
-                    <div class="birthday detail-item">
-                        <div fxLayout="row" fxLayoutAlign="start center">
-                            <mat-icon
-                                aria-label="Birthday"
-                                svgIcon="as_birthday"></mat-icon>
-                                <span>{{project.startDate | date:'shortDate'}}</span> &ndash;
-                                <span>{{project.endDate | date:'shortDate'}}</span>
+    class="wrapper">
+    <div
+        fxLayout="column"
+        fxLayoutAlign="start stretch"
+        *ngIf="project">
+        <as-profile-template [image]="project.photo">
+            <as-profile-title>
+                <span class="last-name">{{project.title}}</span><span class="last-name">: {{project.subtitle}}</span>
+            </as-profile-title>
+            <as-profile-details>
+                <div class="detail-items" fxLayout="row" fxLayout="space-between center">
+                    <div fxLayout="column">
+                        <div class="birthday detail-item">
+                            <div fxLayout="row" fxLayoutAlign="start center">
+                                <mat-icon
+                                    aria-label="Birthday"
+                                    svgIcon="as_birthday"></mat-icon>
+                                    <span>{{project.startDate | date:'shortDate'}}</span> &ndash;
+                                    <span>{{project.endDate | date:'shortDate'}}</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </as-profile-details>
-    </as-profile-template>
+            </as-profile-details>
+        </as-profile-template>
 
-    <as-profile-box heading="Summary">
-        <p>{{ project.description }}</p>
-    </as-profile-box>
+        <as-profile-box heading="Summary">
+            <p>{{ project.description }}</p>
+        </as-profile-box>
 
-    <as-profile-box heading="Tools">
-        <div class="technical-skills" fxLayout="row">
-            <div
-                *ngFor="let tool of project.tools"
-                class="skill">
-                {{ tool }}
+        <as-profile-box heading="Tools">
+            <div class="technical-skills" fxLayout="row">
+                <div
+                    *ngFor="let tool of project.tools"
+                    class="skill">
+                    {{ tool }}
+                </div>
             </div>
-        </div>
-    </as-profile-box>
+        </as-profile-box>
+    </div>
 </div>

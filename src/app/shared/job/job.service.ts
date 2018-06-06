@@ -39,7 +39,8 @@ export class JobService {
             endDate: new Date(json.endDate),
             location: json.location,
             website: json.website,
-            responsibilities: json.responsibilities,
+            tasks: json.tasks,
+            tools: json.tools,
             photo: this.domSanitizer.bypassSecurityTrustResourceUrl(json.photo)
         };
     }

@@ -1,0 +1,11 @@
+<div
+    [ngClass]="imageClass()"
+    class="image-container">
+    <div
+        [ngStyle]="imageStyle()"
+        class="image">
+        <div
+            *ngIf="gradient"
+            class="gradient"></div>
+    </div>
+</div>

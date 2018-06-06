@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageOrientation } from '../../shared/image/image-orientation.enum';
 
 @Component({
 	selector: 'as-media-vector',
@@ -7,19 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class MediaVectorComponent implements OnInit {
-	vectors: string[];
+	images: string[];
+	orientation: ImageOrientation;
 	
 	constructor() {}
 
 	ngOnInit() {
-		this.vectors = [
+		this.images = [
 			"/assets/vectors/andrew.svg",
 		];
-	}
-
-	public vectorStyle(vector: string): Object {
-		return {
-			'background-image': `url('${vector}')`,
-		}
+		this.orientation = ImageOrientation.Original;
 	}
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ImageOrientation } from '../../shared/image/image-orientation.enum';
 
 @Component({
 	selector: 'as-media-digital',
@@ -8,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 
 export class MediaDigitalComponent implements OnInit {
 	images: string[];
+	orientation: ImageOrientation;
 	
 	constructor() {}
 
@@ -17,5 +19,6 @@ export class MediaDigitalComponent implements OnInit {
 			"/assets/images/self-portrait.png",
 			"/assets/images/abstract-shapes.png",
 		];
+		this.orientation = ImageOrientation.Square;
 	}
 }

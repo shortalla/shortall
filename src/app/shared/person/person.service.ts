@@ -38,7 +38,8 @@ export class PersonService {
             location: json.location,
             workTitle: json.workTitle,
             skills: json.skills,
-            photo: this.domSanitizer.bypassSecurityTrustResourceUrl(json.photo)
+            photo: this.domSanitizer.bypassSecurityTrustResourceUrl(json.photo),
+            summary: json.summary,
         };
     }
 

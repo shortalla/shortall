@@ -1,10 +1,6 @@
-<div class="vectors" fxLayout="row" fxLayoutAlign="center center">
-    <div
-        class="vector-container"
-        *ngFor="let vector of vectors">
-        <div
-            [ngStyle]="vectorStyle(vector)"
-            class="vector">
-        </div>
-    </div>
-</div>
+<as-image-list
+    [images]="images"
+    [hasBorder]="false"
+    [hasGradient]="false"
+    [orientation]="orientation">
+</as-image-list>

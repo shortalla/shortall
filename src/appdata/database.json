@@ -38,7 +38,8 @@
                 "Illustrator",
                 "Inkscape",
                 "GIMP"
-            ]
+            ],
+            "summary": "Creative, innovative and adaptable; with 2 years experience as a lead frontend developer. Seeking new opportunities where I can utilise my knowledge of Angular and responsive web design."
         }
     ],
     "job": [
@@ -52,7 +53,17 @@
             "endDate": 1527724800000,
             "location": "Berlin, Germany",
             "website": "http://talque.com/",
-            "responsibilities": [
+            "tasks": [
+                "Built screens for a hybrid mobile app using a component-based architecture.",
+                "Independently constructed the landing page for the company's main product.",
+                "Created and influenced designs for both layouts and icons, improving and sustaining the user experience.",
+                "Maintained responsive design and cross-browser compatibility for all features.",
+                "Regularly met fast-approaching deadlines with sufficient time for effective testing.",
+                "Actively performed cleanups to remove legacy code and uphold standards.",
+                "Ensured technical documentation was clear and precise.",
+                "Worked closely with other developers, discussing data structures, progress and other issues."
+            ],
+            "tools": [
                 "Angular",
                 "TypeScript",
                 "SASS",
@@ -83,7 +94,12 @@
             "endDate": 1441929600000,
             "location": "Dublin, Ireland",
             "website": "https://munichre.com/",
-            "responsibilities": [
+            "tasks": [
+                "Developed internal tools and product features for use within the company.",
+                "item Supported the QA team with active testing.",
+                "Created mock up screens for customers with the use of Axure RP prototyping tool"
+            ],
+            "tools": [
                 "AngularJS",
                 "jQuery",
                 "HTML5",
