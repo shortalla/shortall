@@ -1,83 +1,83 @@
-$gs-content-padding-xs-vertical:		1.5em;
-$gs-content-padding-xs-horizontal: 		1.5em;
+$content-padding-xs-vertical:		1.5em;
+$content-padding-xs-horizontal: 	1.5em;
 
-$gs-content-padding-sm-vertical:		2em;
-$gs-content-padding-sm-horizontal:		3em;
+$content-padding-sm-vertical:		2em;
+$content-padding-sm-horizontal:		3em;
 
-$gs-content-padding-md-vertical:		3em;
-$gs-content-padding-md-horizontal:		6em;
+$content-padding-md-vertical:		3em;
+$content-padding-md-horizontal:		6em;
 
-$gs-content-padding-lg-vertical:		3em;
-$gs-content-padding-lg-horizontal:		6em;
+$content-padding-lg-vertical:		3em;
+$content-padding-lg-horizontal:		6em;
 
 
 // Extra small screen
 @media (max-width: $layout-breakpoint-xs - 1) {
-	.gs-content-padding {
-		padding: $gs-content-padding-xs-vertical $gs-content-padding-xs-horizontal;
+	.content-padding {
+		padding: $content-padding-xs-vertical $content-padding-xs-horizontal;
 	}
 
-	.gs-content-padding-vertical {
-		padding-top: $gs-content-padding-xs-vertical;
-		padding-bottom: $gs-content-padding-xs-vertical;
+	.content-padding-vertical {
+		padding-top: $content-padding-xs-vertical;
+		padding-bottom: $content-padding-xs-vertical;
 	}
 
-	.gs-content-padding-horizontal {
-		padding-left: $gs-content-padding-xs-horizontal;
-		padding-right: $gs-content-padding-xs-horizontal;
+	.content-padding-horizontal {
+		padding-left: $content-padding-xs-horizontal;
+		padding-right: $content-padding-xs-horizontal;
 	}
 }
 
 
 // Small screen
 @media (min-width: $layout-breakpoint-xs) {
-	.gs-content-padding {
-		padding: $gs-content-padding-sm-vertical $gs-content-padding-sm-horizontal;
+	.content-padding {
+		padding: $content-padding-sm-vertical $content-padding-sm-horizontal;
 	}
 
-	.gs-content-padding-vertical {
-		padding-top: $gs-content-padding-sm-vertical;
-		padding-bottom: $gs-content-padding-sm-vertical;
+	.content-padding-vertical {
+		padding-top: $content-padding-sm-vertical;
+		padding-bottom: $content-padding-sm-vertical;
 	}
 
-	.gs-content-padding-horizontal {
-		padding-left: $gs-content-padding-sm-horizontal;
-		padding-right: $gs-content-padding-sm-horizontal;
+	.content-padding-horizontal {
+		padding-left: $content-padding-sm-horizontal;
+		padding-right: $content-padding-sm-horizontal;
 	}
 }
 
 
 // Medium screen
 @media (min-width: $layout-breakpoint-sm) {
-	.gs-content-padding {
-		padding: $gs-content-padding-md-vertical $gs-content-padding-md-horizontal;
+	.content-padding {
+		padding: $content-padding-md-vertical $content-padding-md-horizontal;
 	}
 
-	.gs-content-padding-vertical {
-		padding-top: $gs-content-padding-md-vertical;
-		padding-bottom: $gs-content-padding-md-vertical;
+	.content-padding-vertical {
+		padding-top: $content-padding-md-vertical;
+		padding-bottom: $content-padding-md-vertical;
 	}
 
-	.gs-content-padding-horizontal {
-		padding-left: $gs-content-padding-md-horizontal;
-		padding-right: $gs-content-padding-md-horizontal;
+	.content-padding-horizontal {
+		padding-left: $content-padding-md-horizontal;
+		padding-right: $content-padding-md-horizontal;
 	}
 }
 
 
 // Large screen
 @media (min-width: $layout-breakpoint-md) {
-	.gs-content-padding {
-		padding: $gs-content-padding-lg-vertical $gs-content-padding-lg-horizontal;
+	.content-padding {
+		padding: $content-padding-lg-vertical $content-padding-lg-horizontal;
 	}
 
-	.gs-content-padding-vertical {
-		padding-top: $gs-content-padding-lg-vertical;
-		padding-bottom: $gs-content-padding-lg-vertical;
+	.content-padding-vertical {
+		padding-top: $content-padding-lg-vertical;
+		padding-bottom: $content-padding-lg-vertical;
 	}
 
-	.gs-content-padding-horizontal {
-		padding-left: $gs-content-padding-lg-horizontal;
-		padding-right: $gs-content-padding-lg-horizontal;
+	.content-padding-horizontal {
+		padding-left: $content-padding-lg-horizontal;
+		padding-right: $content-padding-lg-horizontal;
 	}
 }
