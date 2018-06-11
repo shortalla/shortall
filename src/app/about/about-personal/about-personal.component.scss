@@ -6,16 +6,16 @@
 }
 
 as-profile-title {
-    font-size: $large-font-size-xs;
+    font-size: $font-size-xxxl;
 
     .first-name {
-        color: $theme-dark-dark;
-        font-weight: $font-weight-normal;
+        color: $theme-light;
+        font-weight: $font-weight-lightest;
     }
 
     .last-name {
         color: $theme-light;
-        font-weight: $font-weight-lightest;
+        font-weight: $font-weight-normal;
     }
 }
 
@@ -29,6 +29,7 @@ as-profile-details {
     }
 
     .detail-item {
+        font-weight: $font-weight-lightest;
         padding: 0.25em;
         font-size: $font-size-xl;
         margin-right: 1em;

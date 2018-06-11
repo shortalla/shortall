@@ -1,5 +1,5 @@
-<div id="about">
-    <ul fxLayout="row" fxLayoutAlign="center center" id="nav">
+<div id="about" fxLayout="row" fxLayoutAlign="center start">
+    <ul fxLayout="column" fxLayoutAlign="start stretch" id="nav">
         <li>
             <a
                 [routerLink]="['profile']"
@@ -13,5 +13,7 @@
                 [routerLinkActiveOptions]="{exact: true}">{{job.company}}</a>
         </li>
     </ul>
-    <router-outlet></router-outlet>
+    <div class="content">
+        <router-outlet></router-outlet>
+    </div>
 </div>

@@ -6,15 +6,14 @@
 }
 
 as-profile-title {
-    font-size: $large-font-size-xs;
+    font-size: $font-size-xxxl;
+    color: $theme-light;
 
-    .first-name {
-        color: $theme-dark-dark;
+    .title {
         font-weight: $font-weight-normal;
     }
 
-    .last-name {
-        color: $theme-light;
+    .subtitle {
         font-weight: $font-weight-lightest;
     }
 }
