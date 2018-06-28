@@ -8,14 +8,8 @@
 as-profile-title {
     font-size: $font-size-xxxl;
 
-    .first-name {
-        color: $theme-dark-dark;
-        font-weight: $font-weight-normal;
-    }
-
-    .last-name {
+    .company {
         color: $theme-light;
-        font-weight: $font-weight-lightest;
     }
 }
 
@@ -29,9 +23,8 @@ as-profile-details {
     }
 
     .detail-item {
-        font-weight: $font-weight-lightest;
         padding: 0.25em;
-        font-size: $font-size-xl;
+        font-size: $font-size-md;
         margin-right: 1em;
     }
 }

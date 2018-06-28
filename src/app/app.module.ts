@@ -9,8 +9,6 @@ import { ProjectModule } from './project/project.module';
 import { AboutModule } from './about/about.module';
 import { FooterModule } from './footer/footer.module';
 
-import { MediaComponent } from './media/media.component';
-import { AboutComponent } from './about/about.component';
 import { AppComponent } from './app.component';
 
 import { appRouting } from './app.routes';

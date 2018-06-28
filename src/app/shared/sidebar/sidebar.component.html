@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <ul fxLayout="column" fxLayoutAlign="start stretch" id="nav">
+        <li *ngFor="let item of items()">
+            <a
+                [routerLink]="[item.type, item.id]"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact: true}">{{item.label}}</a>
+        </li>
+    </ul>
+</div>
