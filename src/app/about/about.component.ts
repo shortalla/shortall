@@ -10,11 +10,11 @@ import { JobModel } from '../shared/job/job.model';
 
 export class AboutComponent implements OnInit {
 
-	constructor(private jobService: JobService) {}
+  constructor(private jobService: JobService) {}
 
-	public ngOnInit(): void {}
+  public ngOnInit(): void {}
 
-	public jobs(): JobModel[] {
-		return this.jobService.list;
-	}
+  public jobs(): JobModel[] {
+    return this.jobService.list;
+  }
 }

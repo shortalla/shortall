@@ -18,31 +18,31 @@ import { JobService } from '../shared/job/job.service';
 import { appRouting } from '../app.routes';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		FlexLayoutModule,
-		MatIconModule,
-		HttpClientModule,
-		ListModule,
-		ProfileModule,
-		ApiModule,
-		IconModule,
-		appRouting,
-	],
-	declarations: [
-		AboutPersonalComponent,
-		AboutWorkComponent,
-		AboutComponent,
-	],
-	providers: [,
-		PersonService,
-		JobService,
-	],
-	schemas: [
-		CUSTOM_ELEMENTS_SCHEMA
-	],
-	exports: [
-		AboutComponent
-	],
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+    MatIconModule,
+    HttpClientModule,
+    ListModule,
+    ProfileModule,
+    ApiModule,
+    IconModule,
+    appRouting,
+  ],
+  declarations: [
+    AboutPersonalComponent,
+    AboutWorkComponent,
+    AboutComponent,
+  ],
+  providers: [,
+    PersonService,
+    JobService,
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+  exports: [
+    AboutComponent
+  ],
 })
 export class AboutModule { }
