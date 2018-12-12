@@ -1,58 +1,60 @@
 <div
-    class="wrapper">
-    <div
-        fxLayout="column"
-        fxLayoutAlign="start stretch"
-        *ngIf="project">
-        <as-profile-template [image]="project.photo">
-            <as-profile-title>
-                <span class="title">{{project.title}}</span><span class="subtitle">: {{project.subtitle}}</span>
-            </as-profile-title>
-            <as-profile-details>
-                <div class="detail-items" fxLayout="row" fxLayout="space-between center">
-                    <div fxLayout="column">
-                        <div class="link detail-item">
-                            <div fxLayout="row" fxLayoutAlign="start center">
-                                <mat-icon
-                                    aria-label="Website"
-                                    svgIcon="as_website"></mat-icon>
-                                <a href="{{project.link}}">{{project.link}}</a>
-                            </div>
-                        </div>
-                        <div class="date-range detail-item">
-                            <div fxLayout="row" fxLayoutAlign="start center">
-                                <mat-icon
-                                    aria-label="Date range"
-                                    svgIcon="as_date"></mat-icon>
-                                <div>
-                                    <span>{{project.startDate | date:'mediumDate'}}</span> &ndash;
-                                    <span>{{project.endDate | date:'mediumDate'}}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </as-profile-details>
-        </as-profile-template>
-
-        <as-profile-box heading="Summary">
-            <p>{{ project.description }}</p>
-        </as-profile-box>
-
-        <as-profile-box heading="Tools">
-            <div class="technical-skills" fxLayout="row">
-                <div
-                    *ngFor="let tool of project.tools"
-                    class="skill">
-                    {{ tool }}
-                </div>
+  class="wrapper">
+  <div
+    fxLayout="column"
+    fxLayoutAlign="start stretch"
+    *ngIf="project">
+    <as-profile-template [image]="project.photo">
+      <as-profile-title>
+        <span class="title">{{project.title}}</span><span class="subtitle">: {{project.subtitle}}</span>
+      </as-profile-title>
+      <as-profile-details>
+        <div class="detail-items" fxLayout="row" fxLayout="space-between center">
+          <div fxLayout="column">
+            <div class="link detail-item">
+              <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon
+                  aria-label="Website"
+                  svgIcon="as_website">
+                </mat-icon>
+                <a href="{{project.link}}">{{project.link}}</a>
+              </div>
             </div>
-        </as-profile-box>
+            <div class="date-range detail-item">
+              <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon
+                  aria-label="Date range"
+                  svgIcon="as_date">
+                </mat-icon>
+                <div>
+                  <span>{{project.startDate | date:'mediumDate'}}</span> &ndash;
+                  <span>{{project.endDate | date:'mediumDate'}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </as-profile-details>
+    </as-profile-template>
 
-        <as-profile-box heading="Screens">
-            <as-image-switcher
-                [images]="project.screenshots">
-            </as-image-switcher>
-        </as-profile-box>
-    </div>
+    <as-profile-box heading="Summary">
+      <p>{{ project.description }}</p>
+    </as-profile-box>
+
+    <as-profile-box heading="Tools">
+      <div class="technical-skills" fxLayout="row">
+        <div
+          *ngFor="let tool of project.tools"
+          class="skill">
+          {{ tool }}
+        </div>
+      </div>
+    </as-profile-box>
+
+    <as-profile-box heading="Screens">
+      <as-image-switcher
+        [images]="project.screenshots">
+      </as-image-switcher>
+    </as-profile-box>
+  </div>
 </div>

@@ -1,49 +1,49 @@
 @import '~scss/styles.scss';
 
 .wrapper {
-    max-width: 920px;
-    margin: auto;
+  max-width: 920px;
+  margin: auto;
 }
 
 as-profile-title {
-    font-size: $font-size-xxxl;
-    color: $theme-light;
+  font-size: $font-size-xxxl;
+  color: $theme-light;
 
-    .title {
-        font-weight: $font-weight-normal;
-    }
+  .title {
+    font-weight: $font-weight-normal;
+  }
 
-    .subtitle {
-        font-weight: $font-weight-lightest;
-    }
+  .subtitle {
+    font-weight: $font-weight-lightest;
+  }
 }
 
 as-profile-details {
-    mat-icon {
-        margin-right: 1em;
-    }
+  mat-icon {
+    margin-right: 1em;
+  }
 
-    .detail-items {
-        flex-wrap: wrap;
-    }
+  .detail-items {
+    flex-wrap: wrap;
+  }
 
-    .detail-item {
-        padding: 0.25em;
-        font-size: $font-size-xl;
-        margin-right: 1em;
-    }
+  .detail-item {
+    padding: 0.25em;
+    font-size: $font-size-xl;
+    margin-right: 1em;
+  }
 }
 
 p {
-    line-height: 1.4;
-    padding: 0.5rem;
+  line-height: 1.4;
+  padding: 0.5rem;
 }
 
 .technical-skills {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .skill {
-    width: 12.5rem;
-    padding: 0.4rem 1.6rem;
+  width: 12.5rem;
+  padding: 0.4rem 1.6rem;
 }

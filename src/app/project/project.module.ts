@@ -13,27 +13,27 @@ import { ProjectComponent } from './project.component';
 import { ProjectService } from '../shared/project/project.service';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		FlexLayoutModule,
-		ImageModule,
-		ProfileModule,
-		MatIconModule,
-		IconModule,
-		appRouting,
-	],
-	declarations: [
-		ProjectOverviewComponent,
-		ProjectComponent,
-	],
-	providers: [
-		ProjectService
-	],
-	schemas: [
-		CUSTOM_ELEMENTS_SCHEMA
-	],
-	exports: [
-		ProjectComponent
-	], 
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+    ImageModule,
+    ProfileModule,
+    MatIconModule,
+    IconModule,
+    appRouting,
+  ],
+  declarations: [
+    ProjectOverviewComponent,
+    ProjectComponent,
+  ],
+  providers: [
+    ProjectService
+  ],
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
+  exports: [
+    ProjectComponent
+  ], 
 })
 export class ProjectModule { }
