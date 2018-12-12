@@ -4,22 +4,22 @@ import { SafeResourceUrl } from "@angular/platform-browser";
  * Model for a specific job
  */
 export class JobModel {
-    /* 
+  /* 
 	 * The id of the job
 	 */
-    public id: number;
+  public id: number;
 
-    /* 
+  /* 
 	 * The id of the person
 	 */
-    public profileId: number;
+  public profileId: number;
     
 	/* 
 	 * The title of the job
 	 */
 	public title: string;
 
-    /* 
+  /* 
 	 * The company
 	 */
 	public company: string;
@@ -37,9 +37,9 @@ export class JobModel {
 	/* 
 	 * The company website
 	 */
-    public website: string;
+  public website: string;
     
-    /* 
+  /* 
 	 * The company location
 	 */
 	public location: string;

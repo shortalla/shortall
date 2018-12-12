@@ -1,45 +1,45 @@
-@import '~sass/styles.scss';
+@import '~scss/styles.scss';
 
 .wrapper {
-    justify-content: center;
-    padding: 4px 48px;
-    position: relative;
+  justify-content: center;
+  padding: 4px 48px;
+  position: relative;
 }
 
 .button-previous,
 .button-next {
-    background: transparent;
-    border: 1px solid $theme-background;
-    outline: none;
-    border-radius: 50%;
-    height: 40px;
-    width: 40px;
-    background: transparent;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all $transition-time linear;
+  background: transparent;
+  border: 1px solid $theme-background;
+  outline: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all $transition-time linear;
 
-    &[disabled] {
-        opacity: 0.4;
-        border-color: transparent;
-    }
+  &[disabled] {
+    opacity: 0.4;
+    border-color: transparent;
+  }
 
-    &:hover {
-        background-color: $theme-dark-dark;
-    }
+  &:hover {
+    background-color: $theme-dark-dark;
+  }
 }
 
 .button-previous {
-    left: 0;
+  left: 0;
 }
 
 .button-next {
-    right: 0;
+  right: 0;
 }
 
 img {
-    max-width: 100%;
-    max-height: 500px;
-    user-select: none;
+  max-width: 100%;
+  max-height: 500px;
+  user-select: none;
 }

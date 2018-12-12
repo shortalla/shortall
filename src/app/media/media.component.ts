@@ -9,5 +9,5 @@ import { Component, OnInit } from '@angular/core';
 export class MediaComponent implements OnInit {
 	constructor() {}
 
-	ngOnInit() {}
+	public ngOnInit(): void {}
 }

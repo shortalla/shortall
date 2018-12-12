@@ -9,23 +9,23 @@ import { projectRoutes } from './project/project.routes';
 import { aboutRoutes } from './about/about.routes';
 
 export const appRoutes: Routes = [
-    {
-        path: 'home',
-        component: MediaComponent,
-        children: mediaRoutes,
-    }, {   
-        path: 'project',
-        component: ProjectComponent,
-        children: projectRoutes,
-    }, {   
-        path: 'about',
-        component: AboutComponent,
-        children: aboutRoutes,
-    }, {
-        path: '',
-        redirectTo: 'home',
-        pathMatch: 'full',
-    },
+  {
+    path: 'home',
+    component: MediaComponent,
+    children: mediaRoutes,
+  }, {   
+    path: 'project',
+    component: ProjectComponent,
+    children: projectRoutes,
+  }, {   
+    path: 'about',
+    component: AboutComponent,
+    children: aboutRoutes,
+  }, {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full',
+  },
 ];
 
 export const appRouting: ModuleWithProviders = RouterModule.forRoot(appRoutes, {});

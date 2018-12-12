@@ -14,7 +14,7 @@ export class PersonModel {
 	 */
 	public firstName: string;
 
-    /* 
+  /* 
 	 * The last name of the person
 	 */
 	public lastName: string;
@@ -44,12 +44,12 @@ export class PersonModel {
 	 */
 	public skills: string[];
 
-	/**
+	/*
 	 * The photo of the person
 	 */
 	public photo: SafeResourceUrl;
 
-	/**
+	/*
 	 * A summary of the person
 	 */
 	public summary: string;

@@ -1,19 +1,19 @@
 <div class="wrapper">
-    <div fxLayout="row" fxLayout.xs="column">
-        <as-profile-box>
-            <div class="image-container">
-                <div class="image">
-                    <img [src]="image" alt="Profile image" />
-                </div>
-            </div>
-        </as-profile-box>
-        <div class="overview" fxLayout="column" fxLayoutAlign="space-between stretch">
-            <as-profile-box>
-                <ng-content select="as-profile-title"></ng-content>
-            </as-profile-box>
-            <as-profile-box>
-                <ng-content select="as-profile-details"></ng-content>
-            </as-profile-box>
+  <div fxLayout="row" fxLayout.xs="column">
+    <as-profile-box>
+      <div class="image-container">
+        <div class="image">
+          <img [src]="image" alt="Profile image" />
         </div>
+      </div>
+    </as-profile-box>
+    <div class="overview" fxLayout="column" fxLayoutAlign="space-between stretch">
+      <as-profile-box>
+        <ng-content select="as-profile-title"></ng-content>
+      </as-profile-box>
+      <as-profile-box>
+        <ng-content select="as-profile-details"></ng-content>
+      </as-profile-box>
     </div>
+  </div>
 </div>

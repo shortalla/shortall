@@ -12,20 +12,20 @@ import { IconRegistryService } from '../../shared/icon/icon-registry.service';
 })
 
 export class AboutWorkComponent implements OnInit {
-	job: JobModel;
+	public job: JobModel;
 
-	constructor(private jobService: JobService,
-				private iconRegistryService: IconRegistryService,
-				private activatedRoute: ActivatedRoute) {}
+	constructor(
+    private jobService: JobService,
+    private iconRegistryService: IconRegistryService,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
-	ngOnInit() {
-		this.activatedRoute.params.subscribe(
-			data => {
-				const params = this.activatedRoute.snapshot.params;
-				this.jobService.job(
-					params.id
-				).then(job => this.job = job);
-			}
-		);
+	public ngOnInit(): void {
+		this.activatedRoute.params.subscribe(data => {
+      const params = this.activatedRoute.snapshot.params;
+      this.jobService.job(
+        params.id
+      ).then(job => this.job = job);
+		});
 	}
 }

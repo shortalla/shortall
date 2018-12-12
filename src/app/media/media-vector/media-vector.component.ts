@@ -9,12 +9,12 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 
 export class MediaVectorComponent implements OnInit {
-	images: SafeResourceUrl[];
-	orientation: ImageOrientation;
+	public images: SafeResourceUrl[];
+	public orientation: ImageOrientation;
 	
 	constructor() {}
 
-	ngOnInit() {
+	public ngOnInit(): void {
 		this.images = [
 			"/assets/vectors/andrew.svg",
 		];

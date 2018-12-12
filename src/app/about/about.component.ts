@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JobService } from '../shared/job/job.service';
+import { JobModel } from '../shared/job/job.model';
 
 @Component({
 	selector: 'as-about',
@@ -11,9 +12,9 @@ export class AboutComponent implements OnInit {
 
 	constructor(private jobService: JobService) {}
 
-	ngOnInit() {}
+	public ngOnInit(): void {}
 
-	public jobs() {
+	public jobs(): JobModel[] {
 		return this.jobService.list;
 	}
 }

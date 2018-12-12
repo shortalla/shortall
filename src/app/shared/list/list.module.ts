@@ -6,18 +6,17 @@ import { ListComponent } from './list.component';
 
 
 @NgModule({
-    declarations: [
-        ListItemComponent,
-        ListComponent,
-    ],
-    imports: [
-        CommonModule,
-    ],
-    exports: [
-        ListItemComponent,
-        ListComponent,
-    ]
+  declarations: [
+    ListItemComponent,
+    ListComponent,
+  ],
+  imports: [
+    CommonModule,
+  ],
+  exports: [
+    ListItemComponent,
+    ListComponent,
+  ]
 })
 
 export class ListModule { }
-

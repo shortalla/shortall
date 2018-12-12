@@ -1,20 +1,20 @@
-@import '~sass/styles.scss';
+@import '~scss/styles.scss';
 
 .box {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    background-color: $theme-dark;
-    border-radius: 4px;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  background-color: $theme-dark;
+  border-radius: 4px;
 
-    > * {
-        padding: 0.5rem;
-    }
+  > * {
+    padding: 0.5rem;
+  }
 }
 
 h5 {
-    font-size: $font-size-sm;
-    padding-bottom: 0.5rem;
-    text-transform: uppercase;
-    color: $theme-primary;
-    border-bottom: 1px solid $theme-primary;
+  font-size: $font-size-sm;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  color: $theme-primary;
+  border-bottom: 1px solid $theme-primary;
 }

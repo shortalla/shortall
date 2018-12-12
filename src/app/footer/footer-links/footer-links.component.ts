@@ -10,5 +10,5 @@ export class FooterLinksComponent implements OnInit {
 
 	constructor() {}
 
-	ngOnInit() {}
+	public ngOnInit(): void {}
 }

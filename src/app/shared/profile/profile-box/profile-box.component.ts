@@ -7,9 +7,9 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class ProfileBoxComponent implements OnInit {
-	@Input() heading?: string;
+	@Input() public heading?: string;
 
 	constructor() {}
 
-	ngOnInit() {}
+	public ngOnInit(): void {}
 }

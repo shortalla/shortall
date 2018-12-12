@@ -7,12 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class FooterCopyrightComponent implements OnInit {
-	name: string;
-	year: number;
+	public name: string;
+	public year: number;
 
 	constructor() {}
 
-	ngOnInit() {
+	public ngOnInit(): void {
 		this.name = 'Andrew Shortall';
 		const date = new Date();
 		this.year = date.getFullYear();

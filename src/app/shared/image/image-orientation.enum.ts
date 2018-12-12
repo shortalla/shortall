@@ -1,6 +1,6 @@
 export enum ImageOrientation {
-    Landscape,
-    Original,
-    Portrait,
-    Square
-}
+  Landscape,
+  Original,
+  Portrait,
+  Square
+};

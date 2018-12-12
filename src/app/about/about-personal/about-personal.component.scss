@@ -1,48 +1,48 @@
-@import '~sass/styles.scss';
+@import '~scss/styles.scss';
 
 .wrapper {
-    max-width: 920px;
-    margin: auto;
+  max-width: 920px;
+  margin: auto;
 }
 
 as-profile-title {
-    font-size: $font-size-xxxl;
+  font-size: $font-size-xxxl;
 
-    .first-name {
-        color: $theme-light;
-    }
+  .first-name {
+    color: $theme-light;
+  }
 
-    .last-name {
-        color: $theme-light;
-    }
+  .last-name {
+    color: $theme-light;
+  }
 }
 
 as-profile-details {
-    mat-icon {
-        margin-right: 1em;
-    }
+  mat-icon {
+    margin-right: 1em;
+  }
 
-    .detail-items {
-        flex-wrap: wrap;
-    }
+  .detail-items {
+    flex-wrap: wrap;
+  }
 
-    .detail-item {
-        padding: 0.25em;
-        font-size: $font-size-md;
-        margin-right: 1em;
-    }
+  .detail-item {
+    padding: 0.25em;
+    font-size: $font-size-md;
+    margin-right: 1em;
+  }
 }
 
 p {
-    line-height: 1.4;
-    padding: 0.5rem;
+  line-height: 1.4;
+  padding: 0.5rem;
 }
 
 .technical-skills {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .skill {
-    width: 12.5rem;
-    padding: 0.4rem 1.6rem;
+  width: 12.5rem;
+  padding: 0.4rem 1.6rem;
 }

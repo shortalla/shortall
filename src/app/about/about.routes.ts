@@ -5,17 +5,17 @@ import { AboutPersonalComponent } from './about-personal/about-personal.componen
 import { AboutWorkComponent } from './about-work/about-work.component';
 
 export const aboutRoutes: Routes = [
-    {
-        path: 'profile',
-        component: AboutPersonalComponent,
-    }, {
-        path: 'work/:id',
-        component: AboutWorkComponent,
-    }, {
-        path: '',
-        redirectTo: 'profile',
-        pathMatch: 'full',
-    },
+  {
+    path: 'profile',
+    component: AboutPersonalComponent,
+  }, {
+    path: 'work/:id',
+    component: AboutWorkComponent,
+  }, {
+    path: '',
+    redirectTo: 'profile',
+    pathMatch: 'full',
+  },
 ];
 
 export const aboutRouting: ModuleWithProviders = RouterModule.forChild(aboutRoutes);

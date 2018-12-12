@@ -1,51 +1,51 @@
-@import '~sass/styles.scss';
+@import '~scss/styles.scss';
 
 .wrapper {
-    max-width: 920px;
-    margin: auto;
+  max-width: 920px;
+  margin: auto;
 }
 
 as-profile-title {
-    font-size: $font-size-xxxl;
+  font-size: $font-size-xxxl;
 
-    .company {
-        color: $theme-light;
-    }
+  .company {
+    color: $theme-light;
+  }
 }
 
 as-profile-details {
-    mat-icon {
-        margin-right: 1em;
-    }
+  mat-icon {
+    margin-right: 1em;
+  }
 
-    .detail-items {
-        flex-wrap: wrap;
-    }
+  .detail-items {
+    flex-wrap: wrap;
+  }
 
-    .detail-item {
-        padding: 0.25em;
-        font-size: $font-size-md;
-        margin-right: 1em;
-    }
+  .detail-item {
+    padding: 0.25em;
+    font-size: $font-size-md;
+    margin-right: 1em;
+  }
 }
 
 p {
-    line-height: 1.4;
-    padding: 0.5rem;
+  line-height: 1.4;
+  padding: 0.5rem;
 }
 
 li {
-    line-height: 1.4;
-    padding: 0.5rem;
-    list-style-type: disc;
-    margin-left: 1.5rem;
+  line-height: 1.4;
+  padding: 0.5rem;
+  list-style-type: disc;
+  margin-left: 1.5rem;
 }
 
 .tools-container {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .tool {
-    width: 12.5rem;
-    padding: 0.4rem 1.6rem;
+  width: 12.5rem;
+  padding: 0.4rem 1.6rem;
 }

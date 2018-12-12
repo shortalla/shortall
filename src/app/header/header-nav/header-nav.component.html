@@ -1,28 +1,28 @@
 <div fxLayout="row" fxLayoutAlign="space-between end">
-    <div class="title">
-        <span class="first-name">{{firstName}}</span>
-        <span class="last-name">{{lastName}}</span>
-    </div>
-    <nav>
-        <ul fxLayout="row" id="nav">
-            <li>
-                <a
-                    routerLink="/home"
-                    routerLinkActive="active"
-                    [routerLinkActiveOptions]="{ match: ['/home'] }">Home</a>
-            </li>
-            <li>
-                <a
-                    routerLink="/project"
-                    routerLinkActive="active"
-                    [routerLinkActiveOptions]="{ match: ['/project'] }">Projects</a>
-            </li>
-            <li>
-                <a
-                    routerLink="/about"
-                    routerLinkActive="active"
-                    [routerLinkActiveOptions]="{ match: ['/about'] }">About</a>
-            </li>
-        </ul>
-    </nav>
+  <div class="title">
+    <span class="first-name">{{firstName}}</span>
+    <span class="last-name">{{lastName}}</span>
+  </div>
+  <nav>
+    <ul fxLayout="row" id="nav">
+      <li>
+        <a
+          routerLink="/home"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ match: ['/home'] }">Home</a>
+      </li>
+      <li>
+        <a
+          routerLink="/project"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ match: ['/project'] }">Projects</a>
+      </li>
+      <li>
+        <a
+          routerLink="/about"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ match: ['/about'] }">About</a>
+      </li>
+    </ul>
+  </nav>
 </div>

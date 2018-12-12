@@ -9,12 +9,12 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 
 export class ImageListComponent implements OnInit {
-	@Input() images: SafeResourceUrl[];
-	@Input() hasBorder?: boolean;
-	@Input() hasGradient?: boolean;
-	@Input() orientation?: ImageOrientation;
+	@Input() public images: SafeResourceUrl[];
+	@Input() public hasBorder?: boolean;
+	@Input() public hasGradient?: boolean;
+	@Input() public orientation?: ImageOrientation;
 	
 	constructor() {}
 
-	ngOnInit() {}
+	public ngOnInit(): void {}
 }

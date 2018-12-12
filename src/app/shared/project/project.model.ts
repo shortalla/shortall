@@ -9,10 +9,10 @@ export class ProjectModel {
 	 */
 	public id: number;
 
-    /* 
+  /* 
 	 * The id of the person
 	 */
-    public profileId: number;
+  public profileId: number;
 	
 	/* 
 	 * The title of the project
@@ -49,12 +49,12 @@ export class ProjectModel {
 	 */
 	public description: string;
 	
-	/**
+	/*
 	 * The photo of the project
 	 */
 	public photo: SafeResourceUrl;
 
-	/**
+	/*
 	 * Screenshots of the project
 	 */
 	public screenshots: string[];

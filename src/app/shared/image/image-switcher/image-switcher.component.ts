@@ -10,26 +10,26 @@ import { IconRegistryService } from '../../icon/icon-registry.service';
 })
 
 export class ImageSwitcherComponent implements OnInit {
-	@Input() images: SafeResourceUrl[];
-	index: number;
+	@Input() public images: SafeResourceUrl[];
+	public index: number;
 	
 	constructor(private iconRegistryService: IconRegistryService) {}
 
-	ngOnInit() {
+	public ngOnInit(): void {
 		this.index = 0;
 	}
 
-	previous(): void {
+	public previous(): void {
 		if (!this.isFirst())
 			this.index = this.index - 1;
 	}
 
-	next(): void {
+	public next(): void {
 		if (!this.isLast())
 			this.index = this.index + 1;
 	}
 
-	image(): SafeResourceUrl {
+	public image(): SafeResourceUrl {
 		return this.images[this.index];
 	}
 

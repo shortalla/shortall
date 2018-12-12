@@ -8,9 +8,9 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 
 export class SidebarComponent implements OnInit {
-	@Input() items: string[];
+	@Input() public items: string[];
 
 	constructor() {}
 
-	ngOnInit() {}
+	public ngOnInit(): void {}
 }

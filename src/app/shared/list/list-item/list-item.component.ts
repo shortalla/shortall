@@ -13,5 +13,5 @@ import { ListItemModel } from './list-item';
  *  The item includes an icon, a text and an optional heading
  */
 export class ListItemComponent {
-	@Input() item: ListItemModel;
+	@Input() public item: ListItemModel;
 }

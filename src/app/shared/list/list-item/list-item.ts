@@ -4,17 +4,17 @@
  */
 export class ListItemModel {
 	/* 
-	 *  An optional heading
+	 * An optional heading
 	 */
 	public heading?: string;
 
 	/* 
-	 *  The list item text
+	 * The list item text
 	 */
-    public text: string;
+  public text: string;
 
-    /* 
-	 *  The url of the image
+  /* 
+	 * The url of the image
 	 */
-    public imageUrl: string;
+  public imageUrl: string;
 }

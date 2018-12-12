@@ -21,7 +21,7 @@
       "prefix": "as",
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.css",
-        "sass/styles.scss"
+        "scss/styles.scss"
       ],
       "stylePreprocessorOptions": {
         "includePaths": [

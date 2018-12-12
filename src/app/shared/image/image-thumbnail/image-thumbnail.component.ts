@@ -9,10 +9,10 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 
 export class ImageThumbnailComponent implements OnInit {
-	@Input() image: SafeResourceUrl;
-	@Input() hasBorder?: boolean;
-	@Input() hasGradient?: boolean;
-	@Input() orientation?: ImageOrientation;
+	@Input() public image: SafeResourceUrl;
+	@Input() public hasBorder?: boolean;
+	@Input() public hasGradient?: boolean;
+	@Input() public orientation?: ImageOrientation;
 	
 	constructor() {}
 
@@ -30,6 +30,6 @@ export class ImageThumbnailComponent implements OnInit {
 			'original': this.orientation === ImageOrientation.Original,
 			'portrait': this.orientation === ImageOrientation.Portrait,
 			'square': this.orientation === ImageOrientation.Square
-		}
+		};
 	}
 }

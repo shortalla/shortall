@@ -1,73 +1,77 @@
 <div
-    class="wrapper">
-    <div
-        fxLayout="column"
-        fxLayoutAlign="start stretch"
-        *ngIf="job">
-        <as-profile-template [image]="job.photo" >
-            <as-profile-title>
-                <span class="company">{{job.company}}</span>
-            </as-profile-title>
-            <as-profile-details>
-                <div class="detail-items" fxLayout="row" fxLayout="space-between center">
-                    <div fxLayout="column">
-                        <div class="work-title detail-item">
-                            <div fxLayout="row" fxLayoutAlign="start center">
-                                <mat-icon
-                                    aria-label="Work title"
-                                    svgIcon="as_work"></mat-icon>
-                                <span>{{job.title}}</span>
-                            </div>
-                        </div>
-                        <div class="location detail-item">
-                            <div fxLayout="row" fxLayoutAlign="start center">
-                                <mat-icon
-                                    aria-label="Location"
-                                    svgIcon="as_location"></mat-icon>
-                                <span>{{job.location}}</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div fxLayout="column">
-                        <div class="website detail-item">
-                            <div fxLayout="row" fxLayoutAlign="start center">
-                                <mat-icon
-                                    aria-label="Website"
-                                    svgIcon="as_website"></mat-icon>
-                                <a href="{{job.website}}">{{job.website}}</a>
-                            </div>
-                        </div>
-                        <div class="date-range detail-item">
-                            <div fxLayout="row" fxLayoutAlign="start center">
-                                <mat-icon
-                                    aria-label="Date range"
-                                    svgIcon="as_date"></mat-icon>
-                                <div>
-                                    <span>{{job.startDate | date:'shortDate'}}</span> &ndash;
-                                    <span>{{job.endDate | date:'shortDate'}}</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </as-profile-details>
-        </as-profile-template>
-        <as-profile-box heading="Responsibilities">
-            <ul>
-                <li
-                    *ngFor="let task of job.tasks">
-                    {{ task }}
-                </li>
-            </ul>
-        </as-profile-box>
-        <as-profile-box heading="Tools">
-            <div class="tools-container" fxLayout="row">
-                <div
-                    *ngFor="let tool of job.tools"
-                    class="tool">
-                    {{ tool }}
-                </div>
+  class="wrapper">
+  <div
+    fxLayout="column"
+    fxLayoutAlign="start stretch"
+    *ngIf="job">
+    <as-profile-template [image]="job.photo">
+      <as-profile-title>
+        <span class="company">{{job.company}}</span>
+      </as-profile-title>
+      <as-profile-details>
+        <div class="detail-items" fxLayout="row" fxLayout="space-between center">
+          <div fxLayout="column">
+            <div class="work-title detail-item">
+              <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon
+                  aria-label="Work title"
+                  svgIcon="as_work">
+                </mat-icon>
+                <span>{{job.title}}</span>
+              </div>
             </div>
-        </as-profile-box>
-    </div>
+            <div class="location detail-item">
+              <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon
+                  aria-label="Location"
+                  svgIcon="as_location">
+                </mat-icon>
+                <span>{{job.location}}</span>
+              </div>
+            </div>
+          </div>
+          <div fxLayout="column">
+            <div class="website detail-item">
+              <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon
+                  aria-label="Website"
+                  svgIcon="as_website">
+                </mat-icon>
+                <a href="{{job.website}}">{{job.website}}</a>
+              </div>
+            </div>
+            <div class="date-range detail-item">
+              <div fxLayout="row" fxLayoutAlign="start center">
+                <mat-icon
+                  aria-label="Date range"
+                  svgIcon="as_date">
+                </mat-icon>
+                <div>
+                  <span>{{job.startDate | date:'shortDate'}}</span> &ndash;
+                  <span>{{job.endDate | date:'shortDate'}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </as-profile-details>
+    </as-profile-template>
+    <as-profile-box heading="Responsibilities">
+      <ul>
+        <li
+          *ngFor="let task of job.tasks">
+          {{ task }}
+        </li>
+      </ul>
+    </as-profile-box>
+    <as-profile-box heading="Tools">
+      <div class="tools-container" fxLayout="row">
+        <div
+          *ngFor="let tool of job.tools"
+          class="tool">
+          {{ tool }}
+        </div>
+      </div>
+    </as-profile-box>
+  </div>
 </div>

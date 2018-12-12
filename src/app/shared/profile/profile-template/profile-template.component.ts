@@ -8,9 +8,9 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 
 export class ProfileTemplateComponent implements OnInit {
-	@Input() image: SafeResourceUrl;
+	@Input() public image: SafeResourceUrl;
 
 	constructor() {}
 
-	ngOnInit() {}
+	public ngOnInit(): void {}
 }

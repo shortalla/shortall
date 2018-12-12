@@ -1,51 +1,51 @@
-@import '~sass/styles.scss';
+@import '~scss/styles.scss';
 
 #project {
-    background-color: $theme-dark-dark;
-    background: repeating-linear-gradient(
-        45deg,
-        $theme-dark-dark,
-        $theme-dark-dark 2px,
-        $theme-dark 2px,
-        $theme-dark 4px
-    );
-    color: $theme-background;
-    padding: 2rem;
+  background-color: $theme-dark-dark;
+  background: repeating-linear-gradient(
+    45deg,
+    $theme-dark-dark,
+    $theme-dark-dark 2px,
+    $theme-dark 2px,
+    $theme-dark 4px
+  );
+  color: $theme-background;
+  padding: 2rem;
 }
 
 ul {
-    padding: 0.25em 0;
-    margin: 0;
-    color: $theme-dark-dark;
-    font-size: $font-size-lg;
+  padding: 0.25em 0;
+  margin: 0;
+  color: $theme-dark-dark;
+  font-size: $font-size-lg;
 }
 
 li {
-    padding: 0;
-    list-style: none;
+  padding: 0;
+  list-style: none;
 }
 
 a {
-    cursor: pointer;
-    display: block;
-    padding: 8px 2px;
-    margin: 0 10px;
-    color: inherit;
-    text-decoration: none;
-    outline: none;
-    border-top: 2px solid transparent;
-    border-bottom: 2px solid transparent;
-    text-transform: uppercase;
-    font-family: 'PT Mono', 'Courier New', Courier, monospace;
+  cursor: pointer;
+  display: block;
+  padding: 8px 2px;
+  margin: 0 10px;
+  color: inherit;
+  text-decoration: none;
+  outline: none;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  font-family: 'PT Mono', 'Courier New', Courier, monospace;
 
-    &:hover {
-        color: $theme-background;
-        border-top: 2px solid $theme-background;
-        border-bottom: 2px solid $theme-background;
-    }
+  &:hover {
+    color: $theme-background;
+    border-top: 2px solid $theme-background;
+    border-bottom: 2px solid $theme-background;
+  }
 
-    &.active {
-        color: $theme-background;
-        border-bottom: 2px solid $theme-background;
-    }
+  &.active {
+    color: $theme-background;
+    border-bottom: 2px solid $theme-background;
+  }
 }

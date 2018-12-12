@@ -9,12 +9,12 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 })
 
 export class MediaPhotoComponent implements OnInit {
-	images: SafeResourceUrl[];
-	orientation: ImageOrientation;
+	public images: SafeResourceUrl[];
+	public orientation: ImageOrientation;
 	
 	constructor() {}
 
-	ngOnInit() {
+	public ngOnInit(): void {
 		this.images = [
 			"/assets/photos/warschauer-sunset.jpg",
 			"/assets/photos/warschauer-buildings.jpg",
