@@ -7,14 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class HeaderNavComponent implements OnInit {
-	public firstName: string;
-	public lastName: string;
+  public firstName: string;
+  public lastName: string;
 
-	constructor() {}
+  constructor() {}
 
-	public ngOnInit(): void {
-		this.firstName = 'Andrew';
-		this.lastName = 'Shortall';
-	}
+  public ngOnInit(): void {
+    this.firstName = 'Andrew';
+    this.lastName = 'Shortall';
+  }
 
 }

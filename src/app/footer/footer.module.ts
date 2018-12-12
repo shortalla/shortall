@@ -7,17 +7,17 @@ import { FooterCopyrightComponent } from './footer-copyright/footer-copyright.co
 import { FooterComponent } from './footer.component';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		FlexLayoutModule,
-	],
-	declarations: [
-		FooterCopyrightComponent,
-		FooterLinksComponent,
-		FooterComponent,
-	],
-	exports: [
-		FooterComponent
-	], 
+  imports: [
+    CommonModule,
+    FlexLayoutModule,
+  ],
+  declarations: [
+    FooterCopyrightComponent,
+    FooterLinksComponent,
+    FooterComponent,
+  ],
+  exports: [
+    FooterComponent
+  ], 
 })
 export class FooterModule { }

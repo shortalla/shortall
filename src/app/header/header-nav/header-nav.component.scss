@@ -1,20 +1,37 @@
 @import '~scss/styles.scss';
 
-nav {
-  color: $theme-dark;
-  font-size: $font-size-lg;
+.header-nav {
+  &__title {
+    text-align: center;
+    padding: 0 1rem;
+    font-size: $large-font-size-xs;
+  }
 
-  ul {
+  &__first-name {
+    color: $theme-dark;
+    font-weight: $font-weight-lightest;
+  }
+
+  &__last-name {
+    color: $theme-dark-dark;
+  }
+
+  &__nav {
+    color: $theme-dark;
+    font-size: $font-size-lg;
+  }
+
+  &__list {
     margin: 0;
     padding: 0;
+    
+    &__item {
+      padding: 0;
+      list-style: none;
+    }
   }
 
-  li {
-    padding: 0;
-    list-style: none;
-  }
-
-  a {
+  &__link {
     cursor: pointer;
     display: block;
     padding: 8px 2px;
@@ -33,23 +50,8 @@ nav {
       border-bottom: 2px solid $theme-primary;
     }
 
-    &.active {
+    &--active {
       color: $theme-primary;
     }
-  }
-}
-
-.title {
-  text-align: center;
-  padding: 0 1rem;
-  font-size: $large-font-size-xs;
-
-  .first-name {
-    color: $theme-dark;
-    font-weight: $font-weight-lightest;
-  }
-
-  .last-name {
-    color: $theme-dark-dark;
   }
 }

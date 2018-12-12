@@ -1,26 +1,29 @@
-<div fxLayout="row" fxLayoutAlign="space-between end">
-  <div class="title">
-    <span class="first-name">{{firstName}}</span>
-    <span class="last-name">{{lastName}}</span>
+<div class="header-nav" fxLayout="row" fxLayoutAlign="space-between end">
+  <div class="header-nav__title">
+    <span class="header-nav__first-name">{{firstName}}</span>
+    <span class="header-nav__last-name">{{lastName}}</span>
   </div>
-  <nav>
-    <ul fxLayout="row" id="nav">
-      <li>
+  <nav class="header-nav__nav">
+    <ul class="header-nav__list" fxLayout="row" id="nav">
+      <li class="header-nav__list__item">
         <a
+          class="header-nav__link"
           routerLink="/home"
-          routerLinkActive="active"
+          routerLinkActive="header-nav__link--active"
           [routerLinkActiveOptions]="{ match: ['/home'] }">Home</a>
       </li>
-      <li>
+      <li class="header-nav__list__item">
         <a
+          class="header-nav__link"
           routerLink="/project"
-          routerLinkActive="active"
+          routerLinkActive="header-nav__link--active"
           [routerLinkActiveOptions]="{ match: ['/project'] }">Projects</a>
       </li>
-      <li>
+      <li class="header-nav__list__item">
         <a
+          class="header-nav__link"
           routerLink="/about"
-          routerLinkActive="active"
+          routerLinkActive="header-nav__link--active"
           [routerLinkActiveOptions]="{ match: ['/about'] }">About</a>
       </li>
     </ul>
