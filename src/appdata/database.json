@@ -4,7 +4,7 @@
       "id": 1,
       "firstName": "Andrew",
       "lastName": "Shortall",
-      "photo": "https://scontent-frx5-1.cdninstagram.com/vp/d450901ee1219d435013104c715b0a4f/5BA6CB01/t51.2885-19/s150x150/27879933_173486346762767_1643623188917125120_n.jpg",
+      "photo": "https://66.media.tumblr.com/50e7b0d68c8af2cc3a321957bd321180/tumblr_nky479Wf1F1s5r7ylo1_500.jpg",
       "workTitle": "Frontend Developer",
       "dateOfBirth": 738028800000,
       "placeOfBirth": "Cork, Ireland",
@@ -107,6 +107,47 @@
         "JavaScript",
         "AxureRP",
         "Spring MVC"
+      ]
+    },
+    {
+      "id": 3,
+      "profileId": 3,
+      "title": "Frontend Developer",
+      "company": "Humanitec GmbH",
+      "photo": "https://scontent-ber1-1.xx.fbcdn.net/v/t1.0-9/44128935_877819402417696_6128459212272959488_n.png?_nc_cat=106&_nc_ht=scontent-ber1-1.xx&oh=c5d9706edf8ecd0e553078eba13671d6&oe=5CA11399",
+      "startDate": 1467331200000,
+      "endDate": 1527724800000,
+      "location": "Berlin, Germany",
+      "website": "https://humanitec.com/",
+      "tasks": [
+        "Implemented new features according to style guides provided by the UX team.",
+        "Actively contributed in meetings regarding the products, technologies and processes.",
+        "Used BEM convention, JSDoc and ensured every feature had sufficient unit tests. ",
+        "Worked on building reusable component libraries.",
+        "Mentored new employees as part of their onboarding process.",
+        "Organised exercises for workshops on best frontend practices.",
+        "Reviewed pull requests made by other developers across multiple projects."
+      ],
+      "tools": [
+        "Angular",
+        "NGRX",
+        "TypeScript",
+        "SASS",
+        "jQuery",
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "JSON/XML",
+        "Cordova",
+        "REST",
+        "TSLint",
+        "Jasmine",
+        "Protractor",
+        "Git/GitHub/Bitbucket",
+        "Browserify",
+        "RWD",
+        "Inkscape",
+        "GIMP"
       ]
     }
   ],

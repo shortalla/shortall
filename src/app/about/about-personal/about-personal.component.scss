@@ -5,7 +5,7 @@
   margin: auto;
 }
 
-as-profile-title {
+div[as-profile-title] {
   font-size: $font-size-xxxl;
 
   .first-name {
@@ -17,7 +17,7 @@ as-profile-title {
   }
 }
 
-as-profile-details {
+div[as-profile-details] {
   mat-icon {
     margin-right: 1em;
   }
@@ -28,8 +28,13 @@ as-profile-details {
 
   .detail-item {
     padding: 0.25em;
-    font-size: $font-size-md;
+    font-size: $font-size-xs;
     margin-right: 1em;
+  }
+
+  mat-icon {
+    height: 16px;
+    width: 16px;
   }
 }
 

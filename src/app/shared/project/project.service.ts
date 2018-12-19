@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs/Observable';
 import { HttpProjectService } from '../api/http-project.service';
 import { ProjectModel } from './project.model';
 import { DomSanitizer } from '@angular/platform-browser';

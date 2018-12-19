@@ -2,4 +2,7 @@
 
 .footer-copyright {
   padding: calc(0.25em + 8px) 0;
+  color: $theme-dark-light;
+  line-height: $font-size-md;
+  font-size: $font-size-xxs;
 }

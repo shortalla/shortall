@@ -6,15 +6,15 @@ import { HttpPersonService } from './http-person.service';
 import { HttpProjectService } from './http-project.service'; 
 
 @NgModule({
-	imports: [
-		HttpClientModule,
-	],
-	declarations: [],
-	providers: [
-		HttpJobService,
-		HttpPersonService,
-		HttpProjectService,
-	],
-	exports: [],
+  imports: [
+    HttpClientModule,
+  ],
+  declarations: [],
+  providers: [
+    HttpJobService,
+    HttpPersonService,
+    HttpProjectService,
+  ],
+  exports: [],
 })
 export class ApiModule { }

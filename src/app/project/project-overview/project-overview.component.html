@@ -5,10 +5,10 @@
     fxLayoutAlign="start stretch"
     *ngIf="project">
     <as-profile-template [image]="project.photo">
-      <as-profile-title>
+      <div as-profile-title>
         <span class="title">{{project.title}}</span><span class="subtitle">: {{project.subtitle}}</span>
-      </as-profile-title>
-      <as-profile-details>
+      </div>
+      <div as-profile-details>
         <div class="detail-items" fxLayout="row" fxLayout="space-between center">
           <div fxLayout="column">
             <div class="link detail-item">
@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-      </as-profile-details>
+      </div>
     </as-profile-template>
 
     <as-profile-box heading="Summary">

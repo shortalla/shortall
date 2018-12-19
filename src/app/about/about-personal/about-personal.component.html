@@ -6,12 +6,12 @@
     *ngIf="person">
     <as-profile-template
       [image]="person.photo">
-      <as-profile-title>
+      <div as-profile-title>
         <span class="first-name">{{person.firstName}}</span>
         <span class="last-name">{{person.lastName}}</span>
-      </as-profile-title>
+      </div>
 
-      <as-profile-details>
+      <div as-profile-details>
         <div class="detail-items" fxLayout="row" fxLayout="space-between center">
           <div fxLayout="column">
             <div class="work-title detail-item">
@@ -50,7 +50,7 @@
             </div>
           </div>
         </div>
-      </as-profile-details>
+      </div>
     </as-profile-template>
 
     <as-profile-box heading="Summary">

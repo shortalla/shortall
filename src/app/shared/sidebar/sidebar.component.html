@@ -1,10 +1,17 @@
-<div class="wrapper">
-  <ul fxLayout="column" fxLayoutAlign="start stretch" id="nav">
-    <li *ngFor="let item of items()">
+<div class="sidebar">
+  <ul
+    class="sidebar__list"
+    fxLayout="column" fxLayoutAlign="start stretch" id="nav">
+    <li
+      *ngFor="let item of items()"
+      class="sidebar__list__item">
       <a
+        class="sidebar__list__item__link"
         [routerLink]="[item.type, item.id]"
         routerLinkActive="active"
-        [routerLinkActiveOptions]="{exact: true}">{{item.label}}</a>
+        [routerLinkActiveOptions]="{exact: true}">
+        {{item.label}}
+      </a>
     </li>
   </ul>
 </div>
